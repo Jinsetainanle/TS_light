@@ -4,40 +4,40 @@
 #include "power.h"
 #include "driver.h"
 
-unsigned char BatteryStatus = 0;					//µç³Ø×´Ì¬£¬0¡¢ÎÞ·¨¿ª»ú£¬1¡¢µÍµçÉÁµÆ£¬2¡¢Õý³£µçÁ¿£¬3¡¢Âúµç
-unsigned char BatteryStatusTick = 0;				//µç³Ø×´Ì¬¼ÆÊ±					
-unsigned char BatteryStatusCnt1 = 0;				//µç³Ø×´Ì¬ ´ÎÊý		
-unsigned char BatteryStatusCnt2 = 0;				//µç³Ø×´Ì¬ ´ÎÊý		
-unsigned char BatteryStatusCnt3 = 0;				//µç³Ø×´Ì¬ ´ÎÊý
+unsigned char BatteryStatus = 0;					//ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½0ï¿½ï¿½ï¿½Þ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½Æ£ï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+unsigned char BatteryStatusTick = 0;				//ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½Ê±					
+unsigned char BatteryStatusCnt1 = 0;				//ï¿½ï¿½ï¿½×´Ì¬ ï¿½ï¿½ï¿½ï¿½		
+unsigned char BatteryStatusCnt2 = 0;				//ï¿½ï¿½ï¿½×´Ì¬ ï¿½ï¿½ï¿½ï¿½		
+unsigned char BatteryStatusCnt3 = 0;				//ï¿½ï¿½ï¿½×´Ì¬ ï¿½ï¿½ï¿½ï¿½
 
 bit BatteryLvdStatus = 0;							//LVD ×´Ì¬
-unsigned char BatteryLvdTick = 0;					//LVD ¼ÆÊý
-unsigned char BatteryLvdCnt1 = 0;					//LVD µÍÓÚãÐÖµµçÑ¹¼ì²â´ÎÊý
-unsigned char BatteryLvdCnt2 = 0;					//LVD Ã»µÍÓÚãÐÖµµçÑ¹¼ì²â´ÎÊý
-unsigned char BatteryCurrCheckLevel = 0;			//LVDµ±Ç°¼ì²âµÄµçÑ¹ 
+unsigned char BatteryLvdTick = 0;					//LVD ï¿½ï¿½ï¿½ï¿½
+unsigned char BatteryLvdCnt1 = 0;					//LVD ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+unsigned char BatteryLvdCnt2 = 0;					//LVD Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+unsigned char BatteryCurrCheckLevel = 0;			//LVDï¿½ï¿½Ç°ï¿½ï¿½ï¿½Äµï¿½Ñ¹ 
 
 
-unsigned char BatteryDieTick = 0;					//µç³ØÃ»µç ¹Ø±Õ¼ÆÊý
-unsigned char BatteryDieCntSec = 0;					//×¼±¸¹Ø»úÃëÊý
-bit BatteryDieCntFinishFlag = 0;					//µÍµç¼ÆÊýÍê³É£¬×¼±¸¹Ø»ú±êÖ¾
+unsigned char BatteryDieTick = 0;					//ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ ï¿½Ø±Õ¼ï¿½ï¿½ï¿½
+unsigned char BatteryDieCntSec = 0;					//×¼ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ï¿½ï¿½ï¿½
+bit BatteryDieCntFinishFlag = 0;					//ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É£ï¿½×¼ï¿½ï¿½ï¿½Ø»ï¿½ï¿½ï¿½Ö¾
 
-unsigned char BatteryFullJudgTick = 0;				//³äµçÂúµç ¼ì²â¼ÆÊý
-unsigned char BatteryFullCnt1 = 0;					//Âúµç×´Ì¬ ´ÎÊý
-unsigned char BatteryFullCnt2 = 0;					//Âúµç×´Ì¬ ´ÎÊý
-bit BatteryFullFlag = 0;							//µç³ØÂúµÄ±êÖ¾£¬Í¨¹ý¶ÁÈ¡µç³Ø¹ÜÀíÐ¾Æ¬Òý½ÅµÃ£¬¶ø²»ÊÇ¶ÁÈ¡adcµÃ 
+unsigned char BatteryFullJudgTick = 0;				//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+unsigned char BatteryFullCnt1 = 0;					//ï¿½ï¿½ï¿½ï¿½×´Ì¬ ï¿½ï¿½ï¿½ï¿½
+unsigned char BatteryFullCnt2 = 0;					//ï¿½ï¿½ï¿½ï¿½×´Ì¬ ï¿½ï¿½ï¿½ï¿½
+bit BatteryFullFlag = 0;							//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½Ö¾ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½Ð¾Æ¬ï¿½ï¿½ï¿½ÅµÃ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½È¡adcï¿½ï¿½ 
 
 /*
-**LVD³õÊ¼»¯
+**LVDï¿½ï¿½Ê¼ï¿½ï¿½
 */
 void Lvd_Init(void)
 {
-	LVDCR &= ~0x1f;			//ºó5Î»ÇåÁã
-	LVDCR |= 0x0A << 1;		//VDD µçÑ¹¼ì²âµµÎ» 3.0V
-	LVDCR |= 0x01;			//LVD Ê¹ÄÜÎ» 1:¿ªÆô	
+	LVDCR &= ~0x1f;			//ï¿½ï¿½5Î»ï¿½ï¿½ï¿½ï¿½
+	LVDCR |= 0x0A << 1;		//VDD ï¿½ï¿½Ñ¹ï¿½ï¿½âµµÎ» 3.0V
+	LVDCR |= 0x01;			//LVD Ê¹ï¿½ï¿½Î» 1:ï¿½ï¿½ï¿½ï¿½	
 }
 
 /*
-**µÍÓÚµçÑ¹¼ì²âÁ¿¾Í·µ»Ø ¸ß
+**ï¿½ï¿½ï¿½Úµï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ ï¿½ï¿½
 */
 bit Get_Lvdf(void)
 {
@@ -51,27 +51,27 @@ bit Get_Lvdf(void)
 }
 
 /*
-**ÉèÖÃ¶à¸öµçÑ¹¼ì²âÁ¿
-0000£º1.8V
-0001£º2.0V
-0010£º2.1V
-0011£º2.2V
-0100£º2.4V
-0101£º2.5V
-0110£º2.6V
-0111£º2.7V
-1000£º2.8V
-1001£º2.9V
-1010£º3.0V
-1011£º3.2V
-1100£º3.3V
-1101£º3.6V
-1110£º4.0V
-1111£º4.2V
+**ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½
+0000ï¿½ï¿½1.8V
+0001ï¿½ï¿½2.0V
+0010ï¿½ï¿½2.1V
+0011ï¿½ï¿½2.2V
+0100ï¿½ï¿½2.4V
+0101ï¿½ï¿½2.5V
+0110ï¿½ï¿½2.6V
+0111ï¿½ï¿½2.7V
+1000ï¿½ï¿½2.8V
+1001ï¿½ï¿½2.9V
+1010ï¿½ï¿½3.0V
+1011ï¿½ï¿½3.2V
+1100ï¿½ï¿½3.3V
+1101ï¿½ï¿½3.6V
+1110ï¿½ï¿½4.0V
+1111ï¿½ï¿½4.2V
 */
 void SetLVD_Level(unsigned char level)
 {
-	LVDCR &= ~0x1f;			//ºó5Î»ÇåÁã,ÇåÁãºó¸³ÖµÉèÖÃµçÑ¹¼ì²âÖµ
+	LVDCR &= ~0x1f;			//ï¿½ï¿½5Î»ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ãµï¿½Ñ¹ï¿½ï¿½ï¿½Öµ
 		
 	switch(level)
 	{
@@ -87,7 +87,7 @@ void SetLVD_Level(unsigned char level)
 			break;
 	}
 	
-	LVDCR |= 0x01;				//Ê¹ÄÜ	
+	LVDCR |= 0x01;				//Ê¹ï¿½ï¿½	
 }
 
 void Battery_Manage(void)
@@ -95,7 +95,7 @@ void Battery_Manage(void)
 	
 	Battery_Full_Judg();
 
-	if( !BatteryFullFlag )										//µç³ØÊÇÂúµÄ»°£¬¾Í²»ÓÃÅÐ¶ÏµçÑ¹ÁË
+	if( !BatteryFullFlag )										//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½Í²ï¿½ï¿½ï¿½ï¿½Ð¶Ïµï¿½Ñ¹ï¿½ï¿½
 	{
 		Battery_LvdDetect();
 	}
@@ -110,11 +110,11 @@ void Battery_Manage(void)
 }
 
 /*
-**µç³Ø¼ì²â¼ÆÊý
+**ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 void BatteryTick_Ctrl(void)
 {
-	if(BatteryStatus == BATTERY_STATUS_LOW)		//µç³ØµÍµçÁ¿
+	if(BatteryStatus == BATTERY_STATUS_LOW)		//ï¿½ï¿½ØµÍµï¿½ï¿½ï¿½
 	{
 		if(BatteryDieTick < 1000)				//1ms *1000 = 1s
 		{
@@ -123,29 +123,29 @@ void BatteryTick_Ctrl(void)
 		else
 		{
 			BatteryDieTick = 0;
-			if(BatteryDieCntSec < 105)			//µç³ØµÍµçÁ¿ ³ÖÐø1s ½øÈëµç³ØÃ»µç¹Ø»úÅÐ¶Ï£¬ÅÐ¶Ï³ÖÐø2minÔòµç³ØÃ»µç¹Ø»ú£¬
+			if(BatteryDieCntSec < 105)			//ï¿½ï¿½ØµÍµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½1s ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ø»ï¿½ï¿½Ð¶Ï£ï¿½ï¿½Ð¶Ï³ï¿½ï¿½ï¿½2minï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ø»ï¿½ï¿½ï¿½
 			{
 				BatteryDieCntSec++;
 			}
 			else
 			{
 				BatteryDieCntSec = 0;
-				BatteryDieCntFinishFlag = 1;	//¹Ø»ú
+				BatteryDieCntFinishFlag = 1;	//ï¿½Ø»ï¿½
 			}
 		}
 	}
 	
-	if((BatteryLvdTick < BATTERY_LVD_CYCLE) && (BatteryStatus != BATTERY_STATUS_FULL))		//LVD ¼ì²â¼ÆÊýÐ¡ÓÚ¹æ¶¨Ê±¼ä£¬ÇÒµç³Ø²»ÊÇÂúµç£¬¾Í½øÐÐLVD¼ì²â¼ÆÊý
+	if((BatteryLvdTick < BATTERY_LVD_CYCLE) && (BatteryStatus != BATTERY_STATUS_FULL))		//LVD ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½Ú¹æ¶¨Ê±ï¿½ä£¬ï¿½Òµï¿½Ø²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ç£¬ï¿½Í½ï¿½ï¿½ï¿½LVDï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
 		BatteryLvdTick++;
 	}
 	
-	if(BatteryStatusTick < BATTERY_STATUS_CYCLE)			//µç³Ø×´Ì¬¼ì²â¼ÆÊý
+	if(BatteryStatusTick < BATTERY_STATUS_CYCLE)			//ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
 		BatteryStatusTick++;
 	}
 	
-	if(BatteryFullJudgTick < BATTERY_FULL_JUDG_CYCLE)			//µç³ØÂúµç¼ì²â¼ÆÊý
+	if(BatteryFullJudgTick < BATTERY_FULL_JUDG_CYCLE)			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
 		BatteryFullJudgTick++;
 	}
@@ -155,11 +155,11 @@ void BatteryTick_Ctrl(void)
 
 
 /*
-**µç³Ø×´Ì¬ÅÐ¶Ï
+**ï¿½ï¿½ï¿½×´Ì¬ï¿½Ð¶ï¿½
 */
 void Battery_StatusJudg(void)
 {
-	if(PowerStatus = POWER_STATUS_OFF)				//¹Ø»ú×´Ì¬
+	if(PowerStatus = POWER_STATUS_OFF)				//ï¿½Ø»ï¿½×´Ì¬
 	{
 		BatteryDieTick = 0;
 		BatteryDieCntSec = 0;
@@ -168,49 +168,49 @@ void Battery_StatusJudg(void)
 	
 	if(BatteryStatusTick < BATTERY_STATUS_CYCLE)
 	{
-		return;										//Ã»µ½Ê±¼ä
+		return;										//Ã»ï¿½ï¿½Ê±ï¿½ï¿½
 	}
 	BatteryStatusTick = 0;
 	
-	if(BatteryFullFlag)								//µç³ØÂúµç
+	if(BatteryFullFlag)								//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
-		BatteryStatusCnt1++;						//×´Ì¬¼Æ´Î
+		BatteryStatusCnt1++;						//×´Ì¬ï¿½Æ´ï¿½
 		BatteryStatusCnt2 = 0;
 		BatteryStatusCnt3 = 0;
-		if(BatteryStatusCnt1 > 10)					//10´Î	
+		if(BatteryStatusCnt1 > 10)					//10ï¿½ï¿½	
 		{
 			BatteryStatusCnt1 = 0;
-			BatteryStatus = BATTERY_STATUS_FULL;	//µç³ØÂú×´Ì¬
+			BatteryStatus = BATTERY_STATUS_FULL;	//ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
 		}
-		BatteryDieTick = 0;							//½«µç³ØÃ»µç¹Ø»ú±êÖ¾ÇåÁã
+		BatteryDieTick = 0;							//ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ø»ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½
 		BatteryDieCntSec = 0;
 		BatteryDieCntFinishFlag = 0;
 	}
-	else															//µç³Ø²»ÊÇÂú×´Ì¬
+	else															//ï¿½ï¿½Ø²ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
 	{
-		if(BatteryCurrCheckLevel != BATTERY_DETECT_LEVEL_3p0)		//LVD¼ì²âÊÇ·ñÉèÖÃ3.0VÎªãÐÖµ
+		if(BatteryCurrCheckLevel != BATTERY_DETECT_LEVEL_3p0)		//LVDï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½3.0VÎªï¿½ï¿½Öµ
 		{
 			BatteryCurrCheckLevel = BATTERY_DETECT_LEVEL_3p0;
-			SetLVD_Level(BATTERY_DETECT_LEVEL_3p0);					//½«¼ì²âãÐÖµÉèÖÃÎª3.0V
+			SetLVD_Level(BATTERY_DETECT_LEVEL_3p0);					//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Îª3.0V
 		}
 		
-		if( BatteryLvdStatus == BATTERY_LVD_LOW )					//LVD¼ì²â×´Ì¬£¬ÊÇ·ñÊÇµÍÓÚµçÑ¹¼ì²âãÐÖµ
+		if( BatteryLvdStatus == BATTERY_LVD_LOW )					//LVDï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Çµï¿½ï¿½Úµï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
 		{
 			BatteryStatusCnt1 = 0;
-			BatteryStatusCnt2++;									//¼Æ´Î
+			BatteryStatusCnt2++;									//ï¿½Æ´ï¿½
 			BatteryStatusCnt3 = 0;
 			if(BatteryStatusCnt2 > 10)
 			{
 				BatteryStatusCnt2 = 0;
-				BatteryStatus = BATTERY_STATUS_LOW;					//µç³ØµÍµçÁ¿×´Ì¬
+				BatteryStatus = BATTERY_STATUS_LOW;					//ï¿½ï¿½ØµÍµï¿½ï¿½ï¿½×´Ì¬
 			}
 			
-			if(BatteryDieCntFinishFlag)								//µÍµçÁ¿×´Ì¬£¬³ÖÐø2min´¥·¢¹Ø»ú
+			if(BatteryDieCntFinishFlag)								//ï¿½Íµï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2minï¿½ï¿½ï¿½ï¿½ï¿½Ø»ï¿½
 			{
-				BatteryStatus = BATTERY_STATUS_DIE;					//µç³ØÎªÃ»µç×´Ì¬
+				BatteryStatus = BATTERY_STATUS_DIE;					//ï¿½ï¿½ï¿½ÎªÃ»ï¿½ï¿½×´Ì¬
 			}			
 		}
-		else														//µç³Ø²»ÊÇµÍµçÁ¿£¬Ò²²»ÊÇÂúµçÁ¿×´Ì¬
+		else														//ï¿½ï¿½Ø²ï¿½ï¿½ÇµÍµï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
 		{
 			BatteryStatusCnt1 = 0;
 			BatteryStatusCnt2 = 0;
@@ -218,9 +218,9 @@ void Battery_StatusJudg(void)
 			if(BatteryStatusCnt3 > 10)
 			{
 				BatteryStatusCnt3 = 0;
-				BatteryStatus = BATTERY_STATUS_NOR;					//µç³ØÕý³£µçÁ¿×´Ì¬
+				BatteryStatus = BATTERY_STATUS_NOR;					//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬
 				
-				BatteryDieTick = 0;									//½«µç³ØÃ»µç¹Ø»ú±êÖ¾Î»Çå0
+				BatteryDieTick = 0;									//ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ø»ï¿½ï¿½ï¿½Ö¾Î»ï¿½ï¿½0
 				BatteryDieCntSec = 0;
 				BatteryDieCntFinishFlag = 0;
 			}						
@@ -229,7 +229,7 @@ void Battery_StatusJudg(void)
 }
 
 /*
-**µç³Ø³äµçÂú¼ì²âÅÐ¶Ï
+**ï¿½ï¿½Ø³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
 */
 void Battery_Full_Judg(void)
 {
@@ -264,13 +264,13 @@ void Battery_Full_Judg(void)
 }
 
 /*
-**µç³ØLVD¼ì²â
+**ï¿½ï¿½ï¿½LVDï¿½ï¿½ï¿½
 */
 void Battery_LvdDetect(void)
 {
 
 
-	if(Get_Lvdf())				//¼ì²âµ½µçÑ¹µÍÓÚÉèÖÃµçÑ¹ãÐÖµ
+	if(Get_Lvdf())				//ï¿½ï¿½âµ½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½Ñ¹ï¿½ï¿½Öµ
 	{
 		BatteryLvdCnt1++;
 		BatteryLvdCnt2 = 0;
@@ -294,7 +294,7 @@ void Battery_LvdDetect(void)
 }
 
 /*
-**µç³Ø³õÊ¼»¯º¯Êý
+**ï¿½ï¿½Ø³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 */
 void Battery_Init(void)
 {
@@ -302,21 +302,21 @@ void Battery_Init(void)
 	Battery_Init_Data();
 }
 /*
-**µç³Ø³õÊ¼»¯º¯Êý£¬½øÐÐLVD¼ì²âµç³ØµçÁ¿Ã»µç£¬»òÕßÆäËû£¬ÆäËû×´Ì¬Ê±ÏÈÉèÖÃÎªÕý³£×´Ì¬Ö®ºóÔÙ½øÐÐÅÐ¶Ï
+**ï¿½ï¿½Ø³ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½LVDï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½Ã»ï¿½ç£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½×´Ì¬Ö®ï¿½ï¿½ï¿½Ù½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½
 */
 void Battery_Init_Data(void)
 {
 	unsigned char i = 0;
-	unsigned char BatteryLowCnt = 0;					//¼ì²âÊ±£¬µÍÓÚ¹Ø»úµçÑ¹µÄ´ÎÊý
+	unsigned char BatteryLowCnt = 0;					//ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ú¹Ø»ï¿½ï¿½ï¿½Ñ¹ï¿½Ä´ï¿½ï¿½ï¿½
 	
-	Lvd_Init();											//LVD¼ì²â³õÊ¼»¯
+	Lvd_Init();											//LVDï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½
 	
 	for(i = 0; i < 2; i++)
 	{
 		DelayMs(20);
-		if(Get_Lvdf())									//LVD¼ì²â£¬¸ù¾Ý½á¹ûÅÐ¶Ï
+		if(Get_Lvdf())									//LVDï¿½ï¿½â£¬ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½Ð¶ï¿½
 		{
-			BatteryLowCnt++;							//µÍÓÚ¹Ø»úµçÑ¹µÄ´ÎÊý+
+			BatteryLowCnt++;							//ï¿½ï¿½ï¿½Ú¹Ø»ï¿½ï¿½ï¿½Ñ¹ï¿½Ä´ï¿½ï¿½ï¿½+
 		}
 	}
 	
@@ -326,7 +326,7 @@ void Battery_Init_Data(void)
 	}
 	else
 	{
-		BatteryStatus = BATTERY_STATUS_NOR; 			//¿ª»ú¡¢»½ÐÑµÄÊ±ºò£¬ÏÈ¼ì²âÒ»±éµçÑ¹£¬Èç¹û²»ÊÇ¹Ø»úµçÑ¹£¬¾ÍÏÈÈÏÎªÊÇÕý³£µçÑ¹£¬ºóÆÚÔÚÂýÂýÐ£×¼
+		BatteryStatus = BATTERY_STATUS_NOR; 			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñµï¿½Ê±ï¿½ï¿½ï¿½È¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¹Ø»ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð£×¼
 
 	}
 }
