@@ -2,15 +2,15 @@
 #include "rgb.h"
 #include "battery.h"
 
-unsigned char RgbEffect = 0;				//ÒªÃ´ÉÁË¸£¬ÒªÃ´³¤ÁÁ£¬ÒªÃ´²»ÁÁ
-bit RgbStatus = 0;							//µÆµÄ¿ª¹Ø
+unsigned char RgbEffect = 0;				//ÒªÃ´ï¿½ï¿½Ë¸ï¿½ï¿½ÒªÃ´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÃ´ï¿½ï¿½ï¿½ï¿½
+bit RgbStatus = 0;							//ï¿½ÆµÄ¿ï¿½ï¿½ï¿½
 unsigned int RgbEffectTick = 0;
 
 void RGB_Init(void)
 {
-	*PORTB_REG_ADDR_DIR &= ~RGB_PIN;		
-	*PORTB_REG_ADDR_PU &= ~RGB_PIN;		
-	*PORTB_REG_ADDR_PD |= RGB_PIN;				
+	*PORTB_REG_ADDR_DIR &= ~RGB_PIN;		//output	
+	*PORTB_REG_ADDR_PU &= ~RGB_PIN;			//enable pull up
+	*PORTB_REG_ADDR_PD |= RGB_PIN;			//disable pull down
 	
 	RGB_OFF;
 }
@@ -37,18 +37,18 @@ void RGB_Effect_Judg(void)
 
 	LastEffect = RgbEffect;
 	
-	if( BatteryStatus == BATTERY_STATUS_FULL && ChargeStatus == CHARGE_STATUS_CHARGING )	//³äµç ÇÒ µç³ØÂú
+	if( BatteryStatus == BATTERY_STATUS_FULL && ChargeStatus == CHARGE_STATUS_CHARGING )	//ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 	{
 		RgbEffect = RGB_EFFECT_LIGHT;
 	}
-	else if( ChargeStatus == CHARGE_STATUS_CHARGING  )										//³äµçµÄÊ±ºò	
+	else if( ChargeStatus == CHARGE_STATUS_CHARGING  )										//ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½	
 	{
-		RgbEffect = RGB_EFFECT_TWINKLING;													//ÂýÉÁ
+		RgbEffect = RGB_EFFECT_TWINKLING;													//ï¿½ï¿½ï¿½ï¿½
 	}
-	else if( BatteryStatus == BATTERY_STATUS_LOW && PowerStatus == POWER_STATUS_ON )		//µÍµçÁ¿ ÇÒ ÔÚ¿ª»úµÄÊ±ºò
-//	else if( BatteryStatus == BATTERY_STATUS_LOW )		//µÍµçÁ¿ ÇÒ ÔÚ¿ª»úµÄÊ±ºò
+	else if( BatteryStatus == BATTERY_STATUS_LOW && PowerStatus == POWER_STATUS_ON )		//ï¿½Íµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+//	else if( BatteryStatus == BATTERY_STATUS_LOW )		//ï¿½Íµï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
 	{
-		RgbEffect = RGB_EFFECT_TWINK_FAST;													//¿ìÉÁ
+		RgbEffect = RGB_EFFECT_TWINK_FAST;													//ï¿½ï¿½ï¿½ï¿½
 	}
 	else
 	{

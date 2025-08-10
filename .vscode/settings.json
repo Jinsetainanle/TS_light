@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "holychip_define.h": "c",
+        "HOLYCHIP_DEFINE.H": "cpp",
+        "eve.h": "c"
+    }
+}

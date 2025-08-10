@@ -9,9 +9,9 @@
 /********************** RGB ************************/
 #define RGB_PIN			PORTx_Pin_3
 								  
-#define RGB_OFF			( PORTB_REG_DATA |= RGB_PIN )
-#define RGB_ON			( PORTB_REG_DATA &= ~RGB_PIN )
-//#define RGB_TOGGLE		( PORTB_REG_DATA ^= RGB_PIN )			//²»ÄÜÓÃ£¿£¿£¿
+#define RGB_OFF			( PORTB_REG_DATA |= RGB_PIN )   //set 1
+#define RGB_ON			( PORTB_REG_DATA &= ~RGB_PIN )  //set 0
+//#define RGB_TOGGLE		( PORTB_REG_DATA ^= RGB_PIN )			//ï¿½ï¿½ï¿½ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½ï¿½
 /********************** RGB ************************/
 
 #define PORTB_REG_ADDR_DIR			(unsigned int *)0x46
@@ -48,7 +48,7 @@
 
 
 //#define RGB_EFFECT_CYCLY		1000			
-#define RGB_EFFECT_CYCLY		950			//ÓÐÎó²î£¬¸Ä³É950			
+#define RGB_EFFECT_CYCLY		950			//ï¿½ï¿½ï¿½ï¿½î£¬ï¿½Ä³ï¿½950			
 
 #define RGB_EFFECT_OFF			0
 #define RGB_EFFECT_TWINKLING	1
