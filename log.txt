@@ -1,0 +1,18 @@
+ 2025-08-09 20:41:42,914 - INFO- version 1.0.26.0
+ 2025-08-09 20:41:42,915 - INFO- 输入的文件为： adc.c battery.c charge.c driver.c eve.c inital.c interrupt.c key.c led.c main.c power.c rgb.c sleep.c
+ 2025-08-09 20:41:42,915 - INFO- BIT:14 size: 2048chip:18m121b1fsr1bank:1mtp:1series:2interrupt:0cmd:
+ 2025-08-09 20:41:42,915 - INFO- START C CONVERT ASM
+ 2025-08-09 20:41:42,915 - INFO- picc --chip=18m121b1  --MSGDISABLE=1262,1487,1396:off --CODEOFFSET=4  --RUNTIME=keep --RUNTIME=osccal -Ex.err -S adc.c battery.c charge.c driver.c eve.c inital.c interrupt.c key.c led.c main.c power.c rgb.c sleep.c
+ 2025-08-09 20:41:49,402 - INFO- END C CONVERT ASM
+ 2025-08-09 20:41:49,402 - INFO- START REVISE ASM
+ 2025-08-09 20:41:49,528 - INFO- END REVISE ASM
+ 2025-08-09 20:41:49,529 - INFO- picc --chip=18m121b1 --OPT=asmfile --asmlist --output=bin --MSGDISABLE=1262,1487,1396:off --CODEOFFSET=4 --RUNTIME=keep --RUNTIME=osccal -M -E+x.err adc.as -Odemo_program_V01.hex
+ 2025-08-09 20:41:51,028 - INFO- 链接完成
+ 2025-08-09 20:41:51,029 - INFO- adc.lst
+ 2025-08-09 20:41:51,029 - INFO- demo_program_V01.lst
+ 2025-08-09 20:41:51,029 - INFO- START CONVERT
+ 2025-08-09 20:41:51,029 - INFO- demo_program_V01.hex
+ 2025-08-09 20:41:51,029 - INFO- mcu size2048
+ 2025-08-09 20:41:51,045 - INFO- 转码成功
+ 2025-08-09 20:41:51,045 - INFO- None
+ 2025-08-09 20:41:51,045 - INFO- Success Convert

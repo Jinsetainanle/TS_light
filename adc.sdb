@@ -1,0 +1,771 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18m121b1 ]
+[d frameptr 6 ]
+"32 D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+[v _Lvd_Init Lvd_Init `(v  1 e 1 0 ]
+"42
+[v _Get_Lvdf Get_Lvdf `(b  1 e 0 0 ]
+"72
+[v _SetLVD_Level SetLVD_Level `(v  1 e 1 0 ]
+"93
+[v _Battery_Manage Battery_Manage `(v  1 e 1 0 ]
+"115
+[v _BatteryTick_Ctrl BatteryTick_Ctrl `(v  1 e 1 0 ]
+"160
+[v _Battery_StatusJudg Battery_StatusJudg `(v  1 e 1 0 ]
+"234
+[v _Battery_Full_Judg Battery_Full_Judg `(v  1 e 1 0 ]
+"269
+[v _Battery_LvdDetect Battery_LvdDetect `(v  1 e 1 0 ]
+"299
+[v _Battery_Init Battery_Init `(v  1 e 1 0 ]
+"307
+[v _Battery_Init_Data Battery_Init_Data `(v  1 e 1 0 ]
+"14 D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+[v _Charge_Init Charge_Init `(v  1 e 1 0 ]
+"25
+[v _ChargeTick_Ctrl ChargeTick_Ctrl `(v  1 e 1 0 ]
+"36
+[v _Charge_Config Charge_Config `(v  1 e 1 0 ]
+"45
+[v _Charge_Manage Charge_Manage `(v  1 e 1 0 ]
+"53
+[v _Charge_Detect Charge_Detect `(v  1 e 1 0 ]
+"62 D:\Program Files (x86)\HC-IDE\picc_compiler\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Program Files (x86)\HC-IDE\picc_compiler\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+[v _Tick_Timer_Init Tick_Timer_Init `(v  1 e 1 0 ]
+"13
+[v _TickTimer_Close TickTimer_Close `(v  1 e 1 0 ]
+"22
+[v _TickTimer_Open TickTimer_Open `(v  1 e 1 0 ]
+"31
+[v _Key_Interrupt_Open Key_Interrupt_Open `(v  1 e 1 0 ]
+"37
+[v _Key_Interrupt_Close Key_Interrupt_Close `(v  1 e 1 0 ]
+"45
+[v _ChargeDetect_Interrupt_Open ChargeDetect_Interrupt_Open `(v  1 e 1 0 ]
+"54
+[v _ChargeDetect_Interrupt_Close ChargeDetect_Interrupt_Close `(v  1 e 1 0 ]
+"69
+[v _DelayUs2x DelayUs2x `(v  1 e 1 0 ]
+"78
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+"11 D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+[v _Eve_Manage Eve_Manage `(v  1 e 1 0 ]
+"19
+[v _Eve_Detect Eve_Detect `(v  1 e 1 0 ]
+"13 D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+[v _inital inital `(v  1 e 1 0 ]
+"46
+[v _sysinitial sysinitial `(v  1 e 1 0 ]
+"54
+[v _ramInitial ramInitial `(v  1 e 1 0 ]
+"7 D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+[v _Timer2_Isr Timer2_Isr `II(v  1 e 1 0 ]
+"80 D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+[v _key_Init key_Init `(v  1 e 1 0 ]
+"90
+[v _Key_Detect Key_Detect `(v  1 e 1 0 ]
+"106
+[v _Read_Key Read_Key `(v  1 e 1 0 ]
+"16 D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+[v _led_Init led_Init `(v  1 e 1 0 ]
+"66
+[v _LED_Dim LED_Dim `(v  1 e 1 0 ]
+"74
+[v _LED_DimIndex_Ctrl LED_DimIndex_Ctrl `(v  1 e 1 0 ]
+"105
+[v _LED_Color LED_Color `(v  1 e 1 0 ]
+"147
+[v _LED_Status LED_Status `(v  1 e 1 0 ]
+"164
+[v _LED_PWM_Set LED_PWM_Set `(v  1 e 1 0 ]
+"170
+[v _LED_Manage LED_Manage `(v  1 e 1 0 ]
+"59 D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+[v _main main `(v  1 e 1 0 ]
+"7 D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+[v _Power_Manage Power_Manage `(v  1 e 1 0 ]
+"12
+[v _Power_Turn Power_Turn `(v  1 e 1 0 ]
+"24
+[v _Power_Init Power_Init `(v  1 e 1 0 ]
+"9 D:\оʥ\HC18M121B1_test_ADC_program (2)\rgb.c
+[v _RGB_Init RGB_Init `(v  1 e 1 0 ]
+"33
+[v _RGB_Effect_Judg RGB_Effect_Judg `(v  1 e 1 0 ]
+"67
+[v _RGB_Effect RGB_Effect `(v  1 e 1 0 ]
+"111
+[v _RGB_Set RGB_Set `(v  1 e 1 0 ]
+"12 D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+[v _SleepTick_Ctlr SleepTick_Ctlr `(v  1 e 1 0 ]
+"34
+[v _Sleep_Manage Sleep_Manage `(v  1 e 1 0 ]
+"53
+[v _Sleep_Init Sleep_Init `(v  1 e 1 0 ]
+"62
+[v _Sleep_Wakeup Sleep_Wakeup `(v  1 e 1 0 ]
+"71
+[v _Sleep_Jump Sleep_Jump `(v  1 e 1 0 ]
+"7 D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+[v _BatteryStatus BatteryStatus `uc  1 e 1 0 ]
+"8
+[v _BatteryStatusTick BatteryStatusTick `uc  1 e 1 0 ]
+"9
+[v _BatteryStatusCnt1 BatteryStatusCnt1 `uc  1 e 1 0 ]
+"10
+[v _BatteryStatusCnt2 BatteryStatusCnt2 `uc  1 e 1 0 ]
+"11
+[v _BatteryStatusCnt3 BatteryStatusCnt3 `uc  1 e 1 0 ]
+"13
+[v _BatteryLvdStatus BatteryLvdStatus `b  1 e 0 0 ]
+"14
+[v _BatteryLvdTick BatteryLvdTick `uc  1 e 1 0 ]
+"15
+[v _BatteryLvdCnt1 BatteryLvdCnt1 `uc  1 e 1 0 ]
+"16
+[v _BatteryLvdCnt2 BatteryLvdCnt2 `uc  1 e 1 0 ]
+"17
+[v _BatteryCurrCheckLevel BatteryCurrCheckLevel `uc  1 e 1 0 ]
+"21
+[v _BatteryDieCntSec BatteryDieCntSec `uc  1 e 1 0 ]
+"22
+[v _BatteryDieCntFinishFlag BatteryDieCntFinishFlag `b  1 e 0 0 ]
+"24
+[v _BatteryFullJudgTick BatteryFullJudgTick `uc  1 e 1 0 ]
+"25
+[v _BatteryFullCnt1 BatteryFullCnt1 `uc  1 e 1 0 ]
+"26
+[v _BatteryFullCnt2 BatteryFullCnt2 `uc  1 e 1 0 ]
+"27
+[v _BatteryFullFlag BatteryFullFlag `b  1 e 0 0 ]
+"4 D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+[v _ChargeStatus ChargeStatus `b  1 e 0 0 ]
+"5
+[v _Cnt1 Cnt1 `uc  1 e 1 0 ]
+"6
+[v _Cnt2 Cnt2 `uc  1 e 1 0 ]
+"7
+[v _ChargeDetectTick ChargeDetectTick `uc  1 e 1 0 ]
+"12 D:\Program Files (x86)\HC-IDE\picc_compiler\include\hc18m121b1.h
+[v _INDF INDF `VEuc  1 e 1 @0 ]
+"16
+[v _FSR FSR `VEuc  1 e 1 @4 ]
+"20
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"21
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"22
+[v _IOCA IOCA `VEuc  1 e 1 @7 ]
+"23
+[v _LVDCR LVDCR `VEuc  1 e 1 @8 ]
+"24
+[v _IOCB IOCB `VEuc  1 e 1 @9 ]
+"27
+[v _PDCON PDCON `VEuc  1 e 1 @11 ]
+"28
+[v _PHCON PHCON `VEuc  1 e 1 @13 ]
+"32
+[v _PMCON PMCON `VEuc  1 e 1 @64 ]
+"33
+[v _OPTION OPTION `VEuc  1 e 1 @65 ]
+"34
+[v _PDCON1 PDCON1 `VEuc  1 e 1 @66 ]
+"35
+[v _PHCON1 PHCON1 `VEuc  1 e 1 @67 ]
+"36
+[v _TRISA TRISA `VEuc  1 e 1 @69 ]
+"37
+[v _TRISB TRISB `VEuc  1 e 1 @70 ]
+"39
+[v _PMADRL PMADRL `VEuc  1 e 1 @71 ]
+"40
+[v _PMADRH PMADRH `VEuc  1 e 1 @72 ]
+"41
+[v _PMDATL PMDATL `VEuc  1 e 1 @73 ]
+"42
+[v _PMDATH PMDATH `VEuc  1 e 1 @74 ]
+"44
+[v _T1CR_AUXR T1CR_AUXR `VEuc  1 e 1 @75 ]
+"45
+[v _T1CON T1CON `VEuc  1 e 1 @76 ]
+"46
+[v _T1 T1 `VEuc  1 e 1 @77 ]
+"47
+[v _T1LOAD T1LOAD `VEuc  1 e 1 @78 ]
+"48
+[v _PWM0P PWM0P `VEuc  1 e 1 @79 ]
+"50
+[v _T2CON T2CON `VEuc  1 e 1 @80 ]
+"51
+[v _TMR2H TMR2H `VEuc  1 e 1 @81 ]
+"52
+[v _T2 T2 `VEuc  1 e 1 @82 ]
+"53
+[v _T2LOAD T2LOAD `VEuc  1 e 1 @83 ]
+"54
+[v _PWM1P PWM1P `VEuc  1 e 1 @84 ]
+"55
+[v _PWMSET PWMSET `VEuc  1 e 1 @85 ]
+"56
+[v _ANSELL ANSELL `VEuc  1 e 1 @86 ]
+"57
+[v _ANSELH ANSELH `VEuc  1 e 1 @87 ]
+"58
+[v _ADRESL ADRESL `VEuc  1 e 1 @88 ]
+"60
+[v _ADRESH ADRESH `VEuc  1 e 1 @89 ]
+"61
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @90 ]
+"62
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @91 ]
+"64
+[v _OCCUPY0BE OCCUPY0BE `VEuc  1 e 1 @190 ]
+"65
+[v _OCCUPY0BF OCCUPY0BF `VEuc  1 e 1 @191 ]
+"112
+[v _LVDF LVDF `VEb  1 e 0 @71 ]
+"117
+[v _IOCB2 IOCB2 `VEb  1 e 0 @74 ]
+"121
+[v _IOCB6 IOCB6 `VEb  1 e 0 @78 ]
+"146
+[v _PBIE PBIE `VEb  1 e 0 @113 ]
+"149
+[v _PBIF PBIF `VEb  1 e 0 @116 ]
+"151
+[v _GIE GIE `VEb  1 e 0 @119 ]
+"165
+[v _RD_FLAG RD_FLAG `VEb  1 e 0 @512 ]
+"166
+[v _MTP_CLEN MTP_CLEN `VEb  1 e 0 @513 ]
+"169
+[v _PS0 PS0 `VEb  1 e 0 @520 ]
+"170
+[v _PS1 PS1 `VEb  1 e 0 @521 ]
+"171
+[v _PS2 PS2 `VEb  1 e 0 @522 ]
+"172
+[v _PSA PSA `VEb  1 e 0 @523 ]
+"173
+[v _T0SE T0SE `VEb  1 e 0 @524 ]
+"174
+[v _T0CS T0CS `VEb  1 e 0 @525 ]
+"175
+[v _INTEDG INTEDG `VEb  1 e 0 @526 ]
+"176
+[v _WDTEN WDTEN `VEb  1 e 0 @527 ]
+"179
+[v _PDA0 PDA0 `VEb  1 e 0 @528 ]
+"180
+[v _PDA1 PDA1 `VEb  1 e 0 @529 ]
+"181
+[v _PDA2 PDA2 `VEb  1 e 0 @530 ]
+"182
+[v _PDA3 PDA3 `VEb  1 e 0 @531 ]
+"183
+[v _PDA4 PDA4 `VEb  1 e 0 @532 ]
+"184
+[v _PDA5 PDA5 `VEb  1 e 0 @533 ]
+"185
+[v _PDA6 PDA6 `VEb  1 e 0 @534 ]
+"186
+[v _PDA7 PDA7 `VEb  1 e 0 @535 ]
+"189
+[v _PHA0 PHA0 `VEb  1 e 0 @536 ]
+"190
+[v _PHA1 PHA1 `VEb  1 e 0 @537 ]
+"191
+[v _PHA2 PHA2 `VEb  1 e 0 @538 ]
+"192
+[v _PHA3 PHA3 `VEb  1 e 0 @539 ]
+"193
+[v _PHA4 PHA4 `VEb  1 e 0 @540 ]
+"194
+[v _PHA5 PHA5 `VEb  1 e 0 @541 ]
+"195
+[v _PHA6 PHA6 `VEb  1 e 0 @542 ]
+"196
+[v _PHA7 PHA7 `VEb  1 e 0 @543 ]
+"199
+[v _TRISA0 TRISA0 `VEb  1 e 0 @552 ]
+"200
+[v _TRISA1 TRISA1 `VEb  1 e 0 @553 ]
+"201
+[v _TRISA2 TRISA2 `VEb  1 e 0 @554 ]
+"202
+[v _TRISA3 TRISA3 `VEb  1 e 0 @555 ]
+"203
+[v _TRISA4 TRISA4 `VEb  1 e 0 @556 ]
+"204
+[v _TRISA5 TRISA5 `VEb  1 e 0 @557 ]
+"205
+[v _TRISA6 TRISA6 `VEb  1 e 0 @558 ]
+"206
+[v _TRISA7 TRISA7 `VEb  1 e 0 @559 ]
+"209
+[v _TRISB0 TRISB0 `VEb  1 e 0 @560 ]
+"210
+[v _TRISB1 TRISB1 `VEb  1 e 0 @561 ]
+"211
+[v _TRISB2 TRISB2 `VEb  1 e 0 @562 ]
+"212
+[v _TRISB3 TRISB3 `VEb  1 e 0 @563 ]
+"213
+[v _TRISB4 TRISB4 `VEb  1 e 0 @564 ]
+"214
+[v _TRISB5 TRISB5 `VEb  1 e 0 @565 ]
+"215
+[v _TRISB6 TRISB6 `VEb  1 e 0 @566 ]
+"216
+[v _TRISB7 TRISB7 `VEb  1 e 0 @567 ]
+"219
+[v _T1IF T1IF `VEb  1 e 0 @600 ]
+"220
+[v _T1IE T1IE `VEb  1 e 0 @601 ]
+"221
+[v _BOREN BOREN `VEb  1 e 0 @602 ]
+"222
+[v _BOR BOR `VEb  1 e 0 @603 ]
+"223
+[v _POR POR `VEb  1 e 0 @604 ]
+"224
+[v _T2IF T2IF `VEb  1 e 0 @605 ]
+"225
+[v _T2IE T2IE `VEb  1 e 0 @606 ]
+"226
+[v _T0CK T0CK `VEb  1 e 0 @607 ]
+"229
+[v _T1PR0 T1PR0 `VEb  1 e 0 @608 ]
+"230
+[v _T1PR1 T1PR1 `VEb  1 e 0 @609 ]
+"231
+[v _T1PR2 T1PR2 `VEb  1 e 0 @610 ]
+"232
+[v _T1CK0 T1CK0 `VEb  1 e 0 @611 ]
+"233
+[v _T1CK1 T1CK1 `VEb  1 e 0 @612 ]
+"234
+[v _T0OSCEN T0OSCEN `VEb  1 e 0 @613 ]
+"235
+[v _PWM0E PWM0E `VEb  1 e 0 @614 ]
+"236
+[v _T1EN T1EN `VEb  1 e 0 @615 ]
+"240
+[v _T2PR0 T2PR0 `VEb  1 e 0 @640 ]
+"241
+[v _T2PR1 T2PR1 `VEb  1 e 0 @641 ]
+"242
+[v _T2PR2 T2PR2 `VEb  1 e 0 @642 ]
+"243
+[v _T2CK0 T2CK0 `VEb  1 e 0 @643 ]
+"244
+[v _T2CK1 T2CK1 `VEb  1 e 0 @644 ]
+"245
+[v _SCS SCS `VEb  1 e 0 @645 ]
+"246
+[v _PWM1E PWM1E `VEb  1 e 0 @646 ]
+"247
+[v _T2EN T2EN `VEb  1 e 0 @647 ]
+"250
+[v _PWM1_8 PWM1_8 `VEb  1 e 0 @648 ]
+"251
+[v _PWM1_9 PWM1_9 `VEb  1 e 0 @649 ]
+"252
+[v _T2LOAD_8 T2LOAD_8 `VEb  1 e 0 @650 ]
+"253
+[v _T2LOAD_9 T2LOAD_9 `VEb  1 e 0 @651 ]
+"254
+[v _TIMER2_8 TIMER2_8 `VEb  1 e 0 @652 ]
+"255
+[v _TIMER2_9 TIMER2_9 `VEb  1 e 0 @653 ]
+"256
+[v _PWMS0 PWMS0 `VEb  1 e 0 @654 ]
+"257
+[v _PWMS1 PWMS1 `VEb  1 e 0 @655 ]
+"260
+[v _PWMM PWMM `VEb  1 e 0 @680 ]
+"262
+[v _ANSEL0 ANSEL0 `VEb  1 e 0 @688 ]
+"263
+[v _ANSEL1 ANSEL1 `VEb  1 e 0 @689 ]
+"264
+[v _ANSEL2 ANSEL2 `VEb  1 e 0 @690 ]
+"265
+[v _ANSEL3 ANSEL3 `VEb  1 e 0 @691 ]
+"266
+[v _ANSEL4 ANSEL4 `VEb  1 e 0 @692 ]
+"267
+[v _ANSEL5 ANSEL5 `VEb  1 e 0 @693 ]
+"268
+[v _ANSEL6 ANSEL6 `VEb  1 e 0 @694 ]
+"269
+[v _ANSEL7 ANSEL7 `VEb  1 e 0 @695 ]
+"272
+[v _ANSEL8 ANSEL8 `VEb  1 e 0 @696 ]
+"273
+[v _ANSEL9 ANSEL9 `VEb  1 e 0 @697 ]
+"274
+[v _ANSEL10 ANSEL10 `VEb  1 e 0 @698 ]
+"275
+[v _ANSEL11 ANSEL11 `VEb  1 e 0 @699 ]
+"276
+[v _ANSEL14 ANSEL14 `VEb  1 e 0 @702 ]
+"277
+[v _ANSEL15 ANSEL15 `VEb  1 e 0 @703 ]
+"280
+[v _ADEN ADEN `VEb  1 e 0 @720 ]
+"281
+[v _ADON ADON `VEb  1 e 0 @721 ]
+"282
+[v _CHS0 CHS0 `VEb  1 e 0 @722 ]
+"283
+[v _CHS1 CHS1 `VEb  1 e 0 @723 ]
+"284
+[v _CHS2 CHS2 `VEb  1 e 0 @724 ]
+"285
+[v _CHS3 CHS3 `VEb  1 e 0 @725 ]
+"287
+[v _ADREF ADREF `VEb  1 e 0 @728 ]
+"288
+[v _VHS0 VHS0 `VEb  1 e 0 @729 ]
+"289
+[v _VHS1 VHS1 `VEb  1 e 0 @730 ]
+"290
+[v _VHS2 VHS2 `VEb  1 e 0 @731 ]
+"291
+[v _ADCS0 ADCS0 `VEb  1 e 0 @732 ]
+"292
+[v _ADCS1 ADCS1 `VEb  1 e 0 @733 ]
+"293
+[v _ADCS2 ADCS2 `VEb  1 e 0 @734 ]
+"6 D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+[v _EvePower EvePower `b  1 e 0 0 ]
+"7
+[v _EveDim EveDim `b  1 e 0 0 ]
+"8
+[v _EveColor EveColor `b  1 e 0 0 ]
+"9
+[v _ShortIndex ShortIndex `uc  1 e 1 0 ]
+"66 D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+[v _KeyTick KeyTick `uc  1 e 1 0 ]
+"67
+[v _KeyPressTime KeyPressTime `ui  1 e 2 0 ]
+"68
+[v _KeyShortPressFlag KeyShortPressFlag `b  1 e 0 0 ]
+"69
+[v _KeyLongPressFlag KeyLongPressFlag `b  1 e 0 0 ]
+"70
+[v _LastLongKeyFlag LastLongKeyFlag `b  1 e 0 0 ]
+"72
+[v _KeyShortPressTwiceFlag KeyShortPressTwiceFlag `b  1 e 0 0 ]
+"73
+[v _LastShortPressTime LastShortPressTime `ui  1 e 2 0 ]
+"74
+[v _ShortPressCount ShortPressCount `uc  1 e 1 0 ]
+"6 D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+[v _LED_PWM LED_PWM `[2]uc  1 e 2 0 ]
+"7
+[v _LED_ColorPwm LED_ColorPwm `[2]uc  1 e 2 0 ]
+"8
+[v _LED_DimPwm LED_DimPwm `[2]uc  1 e 2 0 ]
+"9
+[v _LedColor LedColor `uc  1 e 1 0 ]
+"11
+[v _LED_W_DimArray LED_W_DimArray `[7]uc  1 e 7 0 ]
+"12
+[v _LED_Y_DimArray LED_Y_DimArray `[7]uc  1 e 7 0 ]
+"13
+[v _LED_W_DimIndex LED_W_DimIndex `uc  1 e 1 0 ]
+"14
+[v _LED_Y_DimIndex LED_Y_DimIndex `uc  1 e 1 0 ]
+"5 D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+[v _PowerStatus PowerStatus `b  1 e 0 0 ]
+"8 D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+[v _SleepSig SleepSig `b  1 e 0 0 ]
+"9
+[v _PowerOffPrepareToSleepTick PowerOffPrepareToSleepTick `ui  1 e 2 0 ]
+"59 D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"94
+} 0
+"46 D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+[v _sysinitial sysinitial `(v  1 e 1 0 ]
+{
+"52
+} 0
+"54
+[v _ramInitial ramInitial `(v  1 e 1 0 ]
+{
+"67
+} 0
+"16 D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+[v _led_Init led_Init `(v  1 e 1 0 ]
+{
+"58
+} 0
+"80 D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+[v _key_Init key_Init `(v  1 e 1 0 ]
+{
+"85
+} 0
+"13 D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+[v _inital inital `(v  1 e 1 0 ]
+{
+"41
+} 0
+"4 D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+[v _Tick_Timer_Init Tick_Timer_Init `(v  1 e 1 0 ]
+{
+"11
+} 0
+"34 D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+[v _Sleep_Manage Sleep_Manage `(v  1 e 1 0 ]
+{
+"51
+} 0
+"62
+[v _Sleep_Wakeup Sleep_Wakeup `(v  1 e 1 0 ]
+{
+"69
+} 0
+"22 D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+[v _TickTimer_Open TickTimer_Open `(v  1 e 1 0 ]
+{
+"28
+} 0
+"37
+[v _Key_Interrupt_Close Key_Interrupt_Close `(v  1 e 1 0 ]
+{
+"43
+} 0
+"54
+[v _ChargeDetect_Interrupt_Close ChargeDetect_Interrupt_Close `(v  1 e 1 0 ]
+{
+"61
+} 0
+"71 D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+[v _Sleep_Jump Sleep_Jump `(v  1 e 1 0 ]
+{
+"81
+} 0
+"53
+[v _Sleep_Init Sleep_Init `(v  1 e 1 0 ]
+{
+"60
+} 0
+"13 D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+[v _TickTimer_Close TickTimer_Close `(v  1 e 1 0 ]
+{
+"20
+} 0
+"31
+[v _Key_Interrupt_Open Key_Interrupt_Open `(v  1 e 1 0 ]
+{
+"35
+} 0
+"45
+[v _ChargeDetect_Interrupt_Open ChargeDetect_Interrupt_Open `(v  1 e 1 0 ]
+{
+"52
+} 0
+"9 D:\оʥ\HC18M121B1_test_ADC_program (2)\rgb.c
+[v _RGB_Init RGB_Init `(v  1 e 1 0 ]
+{
+"16
+} 0
+"7 D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+[v _Power_Manage Power_Manage `(v  1 e 1 0 ]
+{
+"10
+} 0
+"12
+[v _Power_Turn Power_Turn `(v  1 e 1 0 ]
+{
+"22
+} 0
+"24
+[v _Power_Init Power_Init `(v  1 e 1 0 ]
+{
+"27
+} 0
+"170 D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+[v _LED_Manage LED_Manage `(v  1 e 1 0 ]
+{
+"176
+} 0
+"147
+[v _LED_Status LED_Status `(v  1 e 1 0 ]
+{
+"149
+[v LED_Status@pwm pwm `[2]uc  1 a 2 2 ]
+"162
+} 0
+"164
+[v _LED_PWM_Set LED_PWM_Set `(v  1 e 1 0 ]
+{
+"168
+} 0
+"66
+[v _LED_Dim LED_Dim `(v  1 e 1 0 ]
+{
+"72
+} 0
+"74
+[v _LED_DimIndex_Ctrl LED_DimIndex_Ctrl `(v  1 e 1 0 ]
+{
+"99
+} 0
+"105
+[v _LED_Color LED_Color `(v  1 e 1 0 ]
+{
+"107
+[v LED_Color@index index `uc  1 a 1 2 ]
+"145
+} 0
+"11 D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+[v _Eve_Manage Eve_Manage `(v  1 e 1 0 ]
+{
+"17
+} 0
+"90 D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+[v _Key_Detect Key_Detect `(v  1 e 1 0 ]
+{
+"92
+[v Key_Detect@sys_time sys_time `ui  1 s 2 sys_time ]
+"104
+} 0
+"106
+[v _Read_Key Read_Key `(v  1 e 1 0 ]
+{
+"142
+[v Read_Key@interval interval `ui  1 a 2 4 ]
+"163
+[v Read_Key@interval_1713 interval `ui  1 a 2 6 ]
+"106
+[v Read_Key@sys_time sys_time `ui  1 p 2 2 ]
+"175
+} 0
+"19 D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+[v _Eve_Detect Eve_Detect `(v  1 e 1 0 ]
+{
+"84
+} 0
+"45 D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+[v _Charge_Manage Charge_Manage `(v  1 e 1 0 ]
+{
+"48
+} 0
+"53
+[v _Charge_Detect Charge_Detect `(v  1 e 1 0 ]
+{
+"81
+} 0
+"36
+[v _Charge_Config Charge_Config `(v  1 e 1 0 ]
+{
+"40
+} 0
+"14
+[v _Charge_Init Charge_Init `(v  1 e 1 0 ]
+{
+"23
+} 0
+"93 D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+[v _Battery_Manage Battery_Manage `(v  1 e 1 0 ]
+{
+"110
+} 0
+"160
+[v _Battery_StatusJudg Battery_StatusJudg `(v  1 e 1 0 ]
+{
+"229
+} 0
+"72
+[v _SetLVD_Level SetLVD_Level `(v  1 e 1 0 ]
+{
+[v SetLVD_Level@level level `uc  1 a 1 wreg ]
+[v SetLVD_Level@level level `uc  1 a 1 wreg ]
+"74
+[v SetLVD_Level@level level `uc  1 a 1 2 ]
+"91
+} 0
+"269
+[v _Battery_LvdDetect Battery_LvdDetect `(v  1 e 1 0 ]
+{
+"294
+} 0
+"234
+[v _Battery_Full_Judg Battery_Full_Judg `(v  1 e 1 0 ]
+{
+"264
+} 0
+"299
+[v _Battery_Init Battery_Init `(v  1 e 1 0 ]
+{
+"303
+} 0
+"307
+[v _Battery_Init_Data Battery_Init_Data `(v  1 e 1 0 ]
+{
+"309
+[v Battery_Init_Data@i i `uc  1 a 1 6 ]
+"310
+[v Battery_Init_Data@BatteryLowCnt BatteryLowCnt `uc  1 a 1 5 ]
+"332
+} 0
+"32
+[v _Lvd_Init Lvd_Init `(v  1 e 1 0 ]
+{
+"37
+} 0
+"42
+[v _Get_Lvdf Get_Lvdf `(b  1 e 0 0 ]
+{
+"44
+[v Get_Lvdf@result result `uc  1 a 1 2 ]
+"51
+} 0
+"78 D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+{
+[v DelayMs@t t `ui  1 p 2 3 ]
+"87
+} 0
+"69
+[v _DelayUs2x DelayUs2x `(v  1 e 1 0 ]
+{
+[v DelayUs2x@t t `uc  1 a 1 wreg ]
+[v DelayUs2x@t t `uc  1 a 1 wreg ]
+[v DelayUs2x@t t `uc  1 a 1 2 ]
+"72
+} 0
+"7 D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+[v _Timer2_Isr Timer2_Isr `II(v  1 e 1 0 ]
+{
+"9
+[v Timer2_Isr@timer_1ms timer_1ms `uc  1 s 1 timer_1ms ]
+"32
+} 0
+"12 D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+[v _SleepTick_Ctlr SleepTick_Ctlr `(v  1 e 1 0 ]
+{
+"32
+} 0
+"25 D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+[v _ChargeTick_Ctrl ChargeTick_Ctrl `(v  1 e 1 0 ]
+{
+"31
+} 0
+"115 D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+[v _BatteryTick_Ctrl BatteryTick_Ctrl `(v  1 e 1 0 ]
+{
+"153
+} 0

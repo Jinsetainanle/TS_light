@@ -1,0 +1,1 @@
+ main.d  main.p1:  main.c charge.h power.h eve.h sleep.h led.h KEY.h battery.h driver.h holychip_define.h inital.h rgb.h

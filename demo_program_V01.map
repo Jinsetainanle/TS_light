@@ -1,0 +1,817 @@
+Microchip MPLAB XC8 Compiler V1.45 ()
+
+Linker command line:
+
+--edf=D:\Program Files (x86)\HC-IDE\picc_compiler\dat\en_msgs.txt \
+  --msgdisable=1262,1487,1396:off -cs -h+demo_program_V01.sym \
+  --cmf=demo_program_V01.cmf -z -Q18m121b1 \
+  -oC:\Users\22872\AppData\Local\Temp\s7n0.2 -Mdemo_program_V01.map -E1 \
+  -ver=XC8 -ASTACK=090h-0bdh -pstack=STACK -ACODE=04h-07FFh \
+  -ASTRCODE=04h-07FFh -ASTRING=04h-0FFh,0100h-01FFhx7 \
+  -ACONST=04h-0FFh,0100h-01FFhx7 -AENTRY=04h-0FFh,0100h-01FFhx7 \
+  -ACOMMON=03Eh-03Fh -ABANK0=010h-03Dh -ABANK1=090h-0DFh \
+  -ARAM=010h-03Dh,090h-0DFh -AABS1=010h-03Fh,090h-0DFh -ASFR0=00h-0Fh \
+  -ASFR1=080h-08Fh -preset_vec=04h,intentry=08h,init,end_init \
+  -ppowerup=CODE -pcinit=CODE -pfunctab=ENTRY -ACONFIG=02007h-02007h \
+  -pconfig=CONFIG -DCONFIG=2 -AIDLOC=02000h-02003h -pidloc=IDLOC -DIDLOC=2 \
+  -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k startup.obj \
+  adc.obj 
+
+Object code version is 3.11
+
+Machine type is 18m121b1
+
+
+
+                Name                               Link     Load   Length Selector   Space Scale
+startup.obj     end_init                             15       15        1       10       0
+                reset_vec                             4        4        1        8       0
+adc.obj         cinit                                16       16        2       10       0
+                intentry                              8        8        D       10       0
+                text49                              22A      22A       12       10       0
+                text48                              2DC      2DC        5       10       0
+                text47                              17D      17D       1A       10       0
+                text46                              123      123       22       10       0
+                text45                              2F5      2F5        4       10       0
+                text44                              25E      25E       10       10       0
+                text43                              2B4      2B4        7       10       0
+                text42                              2C7      2C7        6       10       0
+                text41                              1B0      1B0       17       10       0
+                text40                              30C      30C        2       10       0
+                text39                              163      163       1A       10       0
+                text38                              1F2      1F2       14       10       0
+                text37                              218      218       12       10       0
+                text36                               8B       8B       39       10       0
+                text35                              295      295        9       10       0
+                text34                              2AD      2AD        7       10       0
+                text33                              305      305        3       10       0
+                text32                              197      197       19       10       0
+                text31                              30F      30F        1       10       0
+                text30                               FA       FA       29       10       0
+                text29                               18       18       73       10       0
+                text28                              1DD      1DD       15       10       0
+                text27                              30A      30A        2       10       0
+                text26                              145      145       1E       10       0
+                text25                              24D      24D       11       10       0
+                text24                              289      289        C       10       0
+                text23                              29E      29E        8       10       0
+                text22                              206      206       12       10       0
+                text21                              2F1      2F1        4       10       0
+                text20                              308      308        2       10       0
+                text19                              2C1      2C1        6       10       0
+                text18                              30E      30E        1       10       0
+                text17                              2D7      2D7        5       10       0
+                text16                              302      302        3       10       0
+                text15                              2FF      2FF        3       10       0
+                text14                              2ED      2ED        4       10       0
+                text13                              2D2      2D2        5       10       0
+                text12                              2A6      2A6        7       10       0
+                text11                              2FC      2FC        3       10       0
+                text10                              2F9      2F9        3       10       0
+                text9                               2E9      2E9        4       10       0
+                text8                               2CD      2CD        5       10       0
+                text7                               27D      27D        C       10       0
+                text6                               2BB      2BB        6       10       0
+                text5                               26E      26E        F       10       0
+                text4                               2E5      2E5        4       10       0
+                text3                                C4       C4       36       10       0
+                text2                               23C      23C       11       10       0
+                text1                               2E1      2E1        4       10       0
+                maintext                            1C7      1C7       16       10       0
+                cstackBANK0                          33       33        8       10       1
+                bssBANK1l                            C0       C0       12       C0       1
+                bitbssBANK0                         188       31        D       10       1     8
+                bssBANK0                             10       10       21       10       1
+
+TOTAL           Name                               Link     Load   Length     Space
+        CLASS   STACK          
+
+        CLASS   CODE           
+                end_init                             15       15        1         0
+                cinit                                16       16        2         0
+                intentry                              8        8        D         0
+                reset_vec                             4        4        1         0
+                text49                              22A      22A       12         0
+                text48                              2DC      2DC        5         0
+                text47                              17D      17D       1A         0
+                text46                              123      123       22         0
+                text45                              2F5      2F5        4         0
+                text44                              25E      25E       10         0
+                text43                              2B4      2B4        7         0
+                text42                              2C7      2C7        6         0
+                text41                              1B0      1B0       17         0
+                text40                              30C      30C        2         0
+                text39                              163      163       1A         0
+                text38                              1F2      1F2       14         0
+                text37                              218      218       12         0
+                text36                               8B       8B       39         0
+                text35                              295      295        9         0
+                text34                              2AD      2AD        7         0
+                text33                              305      305        3         0
+                text32                              197      197       19         0
+                text31                              30F      30F        1         0
+                text30                               FA       FA       29         0
+                text29                               18       18       73         0
+                text28                              1DD      1DD       15         0
+                text27                              30A      30A        2         0
+                text26                              145      145       1E         0
+                text25                              24D      24D       11         0
+                text24                              289      289        C         0
+                text23                              29E      29E        8         0
+                text22                              206      206       12         0
+                text21                              2F1      2F1        4         0
+                text20                              308      308        2         0
+                text19                              2C1      2C1        6         0
+                text18                              30E      30E        1         0
+                text17                              2D7      2D7        5         0
+                text16                              302      302        3         0
+                text15                              2FF      2FF        3         0
+                text14                              2ED      2ED        4         0
+                text13                              2D2      2D2        5         0
+                text12                              2A6      2A6        7         0
+                text11                              2FC      2FC        3         0
+                text10                              2F9      2F9        3         0
+                text9                               2E9      2E9        4         0
+                text8                               2CD      2CD        5         0
+                text7                               27D      27D        C         0
+                text6                               2BB      2BB        6         0
+                text5                               26E      26E        F         0
+                text4                               2E5      2E5        4         0
+                text3                                C4       C4       36         0
+                text2                               23C      23C       11         0
+                text1                               2E1      2E1        4         0
+                maintext                            1C7      1C7       16         0
+
+        CLASS   STRCODE        
+
+        CLASS   STRING         
+
+        CLASS   CONST          
+
+        CLASS   ENTRY          
+
+        CLASS   COMMON         
+
+        CLASS   BANK0          
+                cstackBANK0                          33       33        8         1
+                bitbssBANK0                         188       31        D         1
+                bssBANK0                             10       10       21         1
+
+        CLASS   BANK1          
+                bssBANK1l                            C0       C0       12         1
+
+        CLASS   RAM            
+
+        CLASS   ABS1           
+                abs_s1                               3E       3E        6         1
+                abs_s1                               45       45       17         1
+                abs_s1                               BE       BE        2         1
+                abs_s1                              200      200        0         1
+                abs_s1                              201      201        0         1
+                abs_s1                              208      208        0         1
+                abs_s1                              209      209        0         1
+                abs_s1                              20A      20A        0         1
+                abs_s1                              20B      20B        0         1
+                abs_s1                              20C      20C        0         1
+                abs_s1                              20D      20D        0         1
+                abs_s1                              20E      20E        0         1
+                abs_s1                              20F      20F        0         1
+                abs_s1                              210      210        0         1
+                abs_s1                              211      211        0         1
+                abs_s1                              212      212        0         1
+                abs_s1                              213      213        0         1
+                abs_s1                              214      214        0         1
+                abs_s1                              215      215        0         1
+                abs_s1                              216      216        0         1
+                abs_s1                              217      217        0         1
+                abs_s1                              218      218        0         1
+                abs_s1                              219      219        0         1
+                abs_s1                              21A      21A        0         1
+                abs_s1                              21B      21B        0         1
+                abs_s1                              21C      21C        0         1
+                abs_s1                              21D      21D        0         1
+                abs_s1                              21E      21E        0         1
+                abs_s1                              21F      21F        0         1
+                abs_s1                              228      228        0         1
+                abs_s1                              229      229        0         1
+                abs_s1                              22A      22A        0         1
+                abs_s1                              22B      22B        0         1
+                abs_s1                              22C      22C        0         1
+                abs_s1                              22D      22D        0         1
+                abs_s1                              22E      22E        0         1
+                abs_s1                              22F      22F        0         1
+                abs_s1                              230      230        0         1
+                abs_s1                              231      231        0         1
+                abs_s1                              232      232        0         1
+                abs_s1                              233      233        0         1
+                abs_s1                              234      234        0         1
+                abs_s1                              235      235        0         1
+                abs_s1                              236      236        0         1
+                abs_s1                              237      237        0         1
+                abs_s1                              258      258        0         1
+                abs_s1                              259      259        0         1
+                abs_s1                              25A      25A        0         1
+                abs_s1                              25B      25B        0         1
+                abs_s1                              25C      25C        0         1
+                abs_s1                              25D      25D        0         1
+                abs_s1                              25E      25E        0         1
+                abs_s1                              25F      25F        0         1
+                abs_s1                              260      260        0         1
+                abs_s1                              261      261        0         1
+                abs_s1                              262      262        0         1
+                abs_s1                              263      263        0         1
+                abs_s1                              264      264        0         1
+                abs_s1                              265      265        0         1
+                abs_s1                              266      266        0         1
+                abs_s1                              267      267        0         1
+                abs_s1                              280      280        0         1
+                abs_s1                              281      281        0         1
+                abs_s1                              282      282        0         1
+                abs_s1                              283      283        0         1
+                abs_s1                              284      284        0         1
+                abs_s1                              285      285        0         1
+                abs_s1                              286      286        0         1
+                abs_s1                              287      287        0         1
+                abs_s1                              288      288        0         1
+                abs_s1                              289      289        0         1
+                abs_s1                              28A      28A        0         1
+                abs_s1                              28B      28B        0         1
+                abs_s1                              28C      28C        0         1
+                abs_s1                              28D      28D        0         1
+                abs_s1                              28E      28E        0         1
+                abs_s1                              28F      28F        0         1
+                abs_s1                              2A8      2A8        0         1
+                abs_s1                              2B0      2B0        0         1
+                abs_s1                              2B1      2B1        0         1
+                abs_s1                              2B2      2B2        0         1
+                abs_s1                              2B3      2B3        0         1
+                abs_s1                              2B4      2B4        0         1
+                abs_s1                              2B5      2B5        0         1
+                abs_s1                              2B6      2B6        0         1
+                abs_s1                              2B7      2B7        0         1
+                abs_s1                              2B8      2B8        0         1
+                abs_s1                              2B9      2B9        0         1
+                abs_s1                              2BA      2BA        0         1
+                abs_s1                              2BB      2BB        0         1
+                abs_s1                              2BE      2BE        0         1
+                abs_s1                              2BF      2BF        0         1
+                abs_s1                              2D0      2D0        0         1
+                abs_s1                              2D1      2D1        0         1
+                abs_s1                              2D2      2D2        0         1
+                abs_s1                              2D3      2D3        0         1
+                abs_s1                              2D4      2D4        0         1
+                abs_s1                              2D5      2D5        0         1
+                abs_s1                              2D8      2D8        0         1
+                abs_s1                              2D9      2D9        0         1
+                abs_s1                              2DA      2DA        0         1
+                abs_s1                              2DB      2DB        0         1
+                abs_s1                              2DC      2DC        0         1
+                abs_s1                              2DD      2DD        0         1
+                abs_s1                              2DE      2DE        0         1
+
+        CLASS   SFR0           
+
+        CLASS   SFR1           
+
+        CLASS   CONFIG         
+
+        CLASS   IDLOC          
+
+        CLASS   EEDATA         
+
+
+
+SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class     Delta
+
+                reset_vec                      000004  000001  000005         8       0  CODE        2
+                intentry                       000008  000308  000310        10       0  CODE        2
+                bssBANK0                       000010  00002B  00003B        10       1  BANK0       1
+                bssBANK1l                      0000C0  000012  0000D2        C0       1  BANK1       1
+
+
+UNUSED ADDRESS RANGES
+
+        Name                Unused          Largest block    Delta
+        BANK0            03B-03D             3           1
+        BANK1            090-0BD            2E           1
+                         0D2-0DF             E
+        CODE             005-007             3           2
+                         310-7FF           4F0
+        CONFIG           2007-2007             1           2
+        CONST            005-007             3           2
+                         310-7FF           100
+        ENTRY            005-007             3           2
+                         310-7FF           100
+        IDLOC            2000-2003             4           2
+        RAM              03B-03D             3           1
+                         090-0BD            2E
+                         0D2-0DF             E
+        SFR0             000-00F            10           1
+        SFR1             080-08F            10           1
+        STACK            090-0BD            2E           1
+        STRCODE          005-007             3           2
+                         310-7FF           4F0
+        STRING           005-007             3           2
+                         310-7FF           100
+
+                                  Symbol Table
+
+Battery_Init_Data@BatteryLowCnt        cstackBANK0  038
+Battery_Init_Data@i                    cstackBANK0  039
+DelayMs@t                              cstackBANK0  036
+DelayUs2x@t                            cstackBANK0  035
+Get_Lvdf@result                        cstackBANK0  035
+Key_Detect@sys_time                    bssBANK0     014
+LED_Color@index                        cstackBANK0  035
+LED_Status@pwm                         cstackBANK0  035
+Read_Key@interval                      cstackBANK0  037
+Read_Key@interval_1713                 cstackBANK0  039
+Read_Key@sys_time                      cstackBANK0  035
+SetLVD_Level@level                     cstackBANK0  035
+Timer2_Isr@timer_1ms                   bssBANK0     01E
+_ADCON0                                (abs)        05A
+_ADCON1                                (abs)        05B
+_ADCS0                                 (abs)        2DC
+_ADCS1                                 (abs)        2DD
+_ADCS2                                 (abs)        2DE
+_ADEN                                  (abs)        2D0
+_ADON                                  (abs)        2D1
+_ADREF                                 (abs)        2D8
+_ADRESH                                (abs)        059
+_ADRESL                                (abs)        058
+_ANSEL0                                (abs)        2B0
+_ANSEL1                                (abs)        2B1
+_ANSEL10                               (abs)        2BA
+_ANSEL11                               (abs)        2BB
+_ANSEL14                               (abs)        2BE
+_ANSEL15                               (abs)        2BF
+_ANSEL2                                (abs)        2B2
+_ANSEL3                                (abs)        2B3
+_ANSEL4                                (abs)        2B4
+_ANSEL5                                (abs)        2B5
+_ANSEL6                                (abs)        2B6
+_ANSEL7                                (abs)        2B7
+_ANSEL8                                (abs)        2B8
+_ANSEL9                                (abs)        2B9
+_ANSELH                                (abs)        057
+_ANSELL                                (abs)        056
+_BOR                                   (abs)        25B
+_BOREN                                 (abs)        25A
+_BatteryCurrCheckLevel                 bssBANK0     028
+_BatteryDieCntFinishFlag               bitbssBANK0  191
+_BatteryDieCntSec                      bssBANK0     027
+_BatteryFullCnt1                       bssBANK0     025
+_BatteryFullCnt2                       bssBANK0     024
+_BatteryFullFlag                       bitbssBANK0  190
+_BatteryFullJudgTick                   bssBANK0     026
+_BatteryLvdCnt1                        bssBANK0     02A
+_BatteryLvdCnt2                        bssBANK0     029
+_BatteryLvdStatus                      bitbssBANK0  192
+_BatteryLvdTick                        bssBANK0     02B
+_BatteryStatus                         bssBANK0     030
+_BatteryStatusCnt1                     bssBANK0     02E
+_BatteryStatusCnt2                     bssBANK0     02D
+_BatteryStatusCnt3                     bssBANK0     02C
+_BatteryStatusTick                     bssBANK0     02F
+_BatteryTick_Ctrl                      text49       22A
+_Battery_Full_Judg                     text39       163
+_Battery_Init                          text40       30C
+_Battery_Init_Data                     text41       1B0
+_Battery_LvdDetect                     text38       1F2
+_Battery_Manage                        text35       295
+_Battery_StatusJudg                    text36       08B
+_CHS0                                  (abs)        2D2
+_CHS1                                  (abs)        2D3
+_CHS2                                  (abs)        2D4
+_CHS3                                  (abs)        2D5
+_ChargeDetectTick                      bssBANK0     021
+_ChargeDetect_Interrupt_Close          text11       2FC
+_ChargeDetect_Interrupt_Open           text16       302
+_ChargeStatus                          bitbssBANK0  193
+_ChargeTick_Ctrl                       text48       2DC
+_Charge_Config                         text33       305
+_Charge_Detect                         text32       197
+_Charge_Init                           text34       2AD
+_Charge_Manage                         text31       30F
+_Cnt1                                  bssBANK0     023
+_Cnt2                                  bssBANK0     022
+_DelayMs                               text44       25E
+_DelayUs2x                             text45       2F5
+_EveColor                              bitbssBANK0  18A
+_EveDim                                bitbssBANK0  18B
+_EvePower                              bitbssBANK0  18C
+_Eve_Detect                            text30       0FA
+_Eve_Manage                            text27       30A
+_FSR                                   (abs)        004
+_GIE                                   (abs)        077
+_Get_Lvdf                              text43       2B4
+_INDF                                  (abs)        000
+_INTEDG                                (abs)        20E
+_IOCA                                  (abs)        007
+_IOCB                                  (abs)        009
+_IOCB2                                 (abs)        04A
+_IOCB6                                 (abs)        04E
+_KeyLongPressFlag                      bitbssBANK0  18E
+_KeyPressTime                          bssBANK0     018
+_KeyShortPressFlag                     bitbssBANK0  18F
+_KeyShortPressTwiceFlag                bitbssBANK0  18D
+_KeyTick                               bssBANK0     01F
+_Key_Detect                            text28       1DD
+_Key_Interrupt_Close                   text10       2F9
+_Key_Interrupt_Open                    text15       2FF
+_LED_Color                             text26       145
+_LED_ColorPwm                          bssBANK0     012
+_LED_Dim                               text24       289
+_LED_DimIndex_Ctrl                     text25       24D
+_LED_DimPwm                            bssBANK0     010
+_LED_Manage                            text21       2F1
+_LED_PWM                               bssBANK1l    0D0
+_LED_PWM_Set                           text23       29E
+_LED_Status                            text22       206
+_LED_W_DimArray                        bssBANK1l    0C7
+_LED_W_DimIndex                        bssBANK0     01B
+_LED_Y_DimArray                        bssBANK1l    0C0
+_LED_Y_DimIndex                        bssBANK0     01A
+_LVDCR                                 (abs)        008
+_LVDF                                  (abs)        047
+_LastLongKeyFlag                       bitbssBANK0  189
+_LastShortPressTime                    bssBANK0     016
+_LedColor                              bssBANK0     01C
+_Lvd_Init                              text42       2C7
+_MTP_CLEN                              (abs)        201
+_OCCUPY0BE                             (abs)        0BE
+_OCCUPY0BF                             (abs)        0BF
+_OPTION                                (abs)        041
+_PBIE                                  (abs)        071
+_PBIF                                  (abs)        074
+_PDA0                                  (abs)        210
+_PDA1                                  (abs)        211
+_PDA2                                  (abs)        212
+_PDA3                                  (abs)        213
+_PDA4                                  (abs)        214
+_PDA5                                  (abs)        215
+_PDA6                                  (abs)        216
+_PDA7                                  (abs)        217
+_PDCON                                 (abs)        00B
+_PDCON1                                (abs)        042
+_PHA0                                  (abs)        218
+_PHA1                                  (abs)        219
+_PHA2                                  (abs)        21A
+_PHA3                                  (abs)        21B
+_PHA4                                  (abs)        21C
+_PHA5                                  (abs)        21D
+_PHA6                                  (abs)        21E
+_PHA7                                  (abs)        21F
+_PHCON                                 (abs)        00D
+_PHCON1                                (abs)        043
+_PMADRH                                (abs)        048
+_PMADRL                                (abs)        047
+_PMCON                                 (abs)        040
+_PMDATH                                (abs)        04A
+_PMDATL                                (abs)        049
+_POR                                   (abs)        25C
+_PORTA                                 (abs)        005
+_PORTB                                 (abs)        006
+_PS0                                   (abs)        208
+_PS1                                   (abs)        209
+_PS2                                   (abs)        20A
+_PSA                                   (abs)        20B
+_PWM0E                                 (abs)        266
+_PWM0P                                 (abs)        04F
+_PWM1E                                 (abs)        286
+_PWM1P                                 (abs)        054
+_PWM1_8                                (abs)        288
+_PWM1_9                                (abs)        289
+_PWMM                                  (abs)        2A8
+_PWMS0                                 (abs)        28E
+_PWMS1                                 (abs)        28F
+_PWMSET                                (abs)        055
+_PowerOffPrepareToSleepTick            bssBANK1l    0CE
+_PowerStatus                           bitbssBANK0  194
+_Power_Init                            text20       308
+_Power_Manage                          text18       30E
+_Power_Turn                            text19       2C1
+_RD_FLAG                               (abs)        200
+_RGB_Init                              text17       2D7
+_Read_Key                              text29       018
+_SCS                                   (abs)        285
+_SetLVD_Level                          text37       218
+_ShortIndex                            bssBANK0     020
+_ShortPressCount                       bssBANK0     01D
+_SleepSig                              bitbssBANK0  188
+_SleepTick_Ctlr                        text47       17D
+_Sleep_Init                            text13       2D2
+_Sleep_Jump                            text12       2A6
+_Sleep_Manage                          text7        27D
+_Sleep_Wakeup                          text8        2CD
+_T0CK                                  (abs)        25F
+_T0CS                                  (abs)        20D
+_T0OSCEN                               (abs)        265
+_T0SE                                  (abs)        20C
+_T1                                    (abs)        04D
+_T1CK0                                 (abs)        263
+_T1CK1                                 (abs)        264
+_T1CON                                 (abs)        04C
+_T1CR_AUXR                             (abs)        04B
+_T1EN                                  (abs)        267
+_T1IE                                  (abs)        259
+_T1IF                                  (abs)        258
+_T1LOAD                                (abs)        04E
+_T1PR0                                 (abs)        260
+_T1PR1                                 (abs)        261
+_T1PR2                                 (abs)        262
+_T2                                    (abs)        052
+_T2CK0                                 (abs)        283
+_T2CK1                                 (abs)        284
+_T2CON                                 (abs)        050
+_T2EN                                  (abs)        287
+_T2IE                                  (abs)        25E
+_T2IF                                  (abs)        25D
+_T2LOAD                                (abs)        053
+_T2LOAD_8                              (abs)        28A
+_T2LOAD_9                              (abs)        28B
+_T2PR0                                 (abs)        280
+_T2PR1                                 (abs)        281
+_T2PR2                                 (abs)        282
+_TIMER2_8                              (abs)        28C
+_TIMER2_9                              (abs)        28D
+_TMR2H                                 (abs)        051
+_TRISA                                 (abs)        045
+_TRISA0                                (abs)        228
+_TRISA1                                (abs)        229
+_TRISA2                                (abs)        22A
+_TRISA3                                (abs)        22B
+_TRISA4                                (abs)        22C
+_TRISA5                                (abs)        22D
+_TRISA6                                (abs)        22E
+_TRISA7                                (abs)        22F
+_TRISB                                 (abs)        046
+_TRISB0                                (abs)        230
+_TRISB1                                (abs)        231
+_TRISB2                                (abs)        232
+_TRISB3                                (abs)        233
+_TRISB4                                (abs)        234
+_TRISB5                                (abs)        235
+_TRISB6                                (abs)        236
+_TRISB7                                (abs)        237
+_TickTimer_Close                       text14       2ED
+_TickTimer_Open                        text9        2E9
+_Tick_Timer_Init                       text6        2BB
+_Timer2_Isr                            text46       123
+_VHS0                                  (abs)        2D9
+_VHS1                                  (abs)        2DA
+_VHS2                                  (abs)        2DB
+_WDTEN                                 (abs)        20F
+__Habs1                                abs1         000
+__Hbank0                               bank0        000
+__Hbank1                               bank1        000
+__HbitbssBANK0                         bitbssBANK0  000
+__HbssBANK0                            bssBANK0     000
+__HbssBANK1l                           bssBANK1l    000
+__Hcinit                               cinit        018
+__Hclrtext                             clrtext      000
+__Hcode                                code         000
+__Hcommon                              common       000
+__Hconfig                              config       000
+__HcstackBANK0                         cstackBANK0  000
+__HcstackCOMMON                        cstackCOMMON 000
+__Heeprom_data                         eeprom_data  000
+__Hend_init                            end_init     016
+__Hfunctab                             functab      000
+__Hidloc                               idloc        000
+__Hinit                                init         015
+__Hintentry                            intentry     015
+__Hmaintext                            maintext     000
+__Hpa_nodes0                           pa_nodes0    000
+__Hpowerup                             powerup      000
+__Hram                                 ram          000
+__Hreset_vec                           reset_vec    005
+__Hsfr0                                sfr0         000
+__Hsfr1                                sfr1         000
+__Hspace_0                             (abs)        310
+__Hspace_1                             (abs)        195
+__Hspace_2                             (abs)        000
+__Hspace_3                             (abs)        000
+__Hstack                               stack        000
+__Hstrings                             strings      000
+__Htext                                text         000
+__Labs1                                abs1         000
+__Lbank0                               bank0        000
+__Lbank1                               bank1        000
+__LbitbssBANK0                         bitbssBANK0  000
+__LbssBANK0                            bssBANK0     000
+__LbssBANK1l                           bssBANK1l    000
+__Lcinit                               cinit        016
+__Lclrtext                             clrtext      000
+__Lcode                                code         000
+__Lcommon                              common       000
+__Lconfig                              config       000
+__LcstackBANK0                         cstackBANK0  000
+__LcstackCOMMON                        cstackCOMMON 000
+__Leeprom_data                         eeprom_data  000
+__Lend_init                            end_init     015
+__Lfunctab                             functab      000
+__Lidloc                               idloc        000
+__Linit                                init         015
+__Lintentry                            intentry     008
+__Lmaintext                            maintext     000
+__Lpa_nodes0                           pa_nodes0    000
+__Lpowerup                             powerup      000
+__Lram                                 ram          000
+__Lreset_vec                           reset_vec    004
+__Lsfr0                                sfr0         000
+__Lsfr1                                sfr1         000
+__Lspace_0                             (abs)        000
+__Lspace_1                             (abs)        000
+__Lspace_2                             (abs)        000
+__Lspace_3                             (abs)        000
+__Lstack                               stack        000
+__Lstrings                             strings      000
+__Ltext                                text         000
+__S0                                   (abs)        310
+__S1                                   (abs)        0D2
+__S2                                   (abs)        000
+___int_sp                              stack        000
+___latbits                             (abs)        000
+___sp                                  stack        000
+__end_of_BatteryTick_Ctrl              text49       23C
+__end_of_Battery_Full_Judg             text39       17D
+__end_of_Battery_Init                  text40       30E
+__end_of_Battery_Init_Data             text41       1C7
+__end_of_Battery_LvdDetect             text38       206
+__end_of_Battery_Manage                text35       29E
+__end_of_Battery_StatusJudg            text36       0C4
+__end_of_ChargeDetect_Interrupt_Close  text11       2FF
+__end_of_ChargeDetect_Interrupt_Open   text16       305
+__end_of_ChargeTick_Ctrl               text48       2E1
+__end_of_Charge_Config                 text33       308
+__end_of_Charge_Detect                 text32       1B0
+__end_of_Charge_Init                   text34       2B4
+__end_of_Charge_Manage                 text31       310
+__end_of_DelayMs                       text44       26E
+__end_of_DelayUs2x                     text45       2F9
+__end_of_Eve_Detect                    text30       123
+__end_of_Eve_Manage                    text27       30C
+__end_of_Get_Lvdf                      text43       2BB
+__end_of_Key_Detect                    text28       1F2
+__end_of_Key_Interrupt_Close           text10       2FC
+__end_of_Key_Interrupt_Open            text15       302
+__end_of_LED_Color                     text26       163
+__end_of_LED_Dim                       text24       295
+__end_of_LED_DimIndex_Ctrl             text25       25E
+__end_of_LED_Manage                    text21       2F5
+__end_of_LED_PWM_Set                   text23       2A6
+__end_of_LED_Status                    text22       218
+__end_of_Lvd_Init                      text42       2CD
+__end_of_Power_Init                    text20       30A
+__end_of_Power_Manage                  text18       30F
+__end_of_Power_Turn                    text19       2C7
+__end_of_RGB_Init                      text17       2DC
+__end_of_Read_Key                      text29       08B
+__end_of_SetLVD_Level                  text37       22A
+__end_of_SleepTick_Ctlr                text47       197
+__end_of_Sleep_Init                    text13       2D7
+__end_of_Sleep_Jump                    text12       2AD
+__end_of_Sleep_Manage                  text7        289
+__end_of_Sleep_Wakeup                  text8        2D2
+__end_of_TickTimer_Close               text14       2F1
+__end_of_TickTimer_Open                text9        2ED
+__end_of_Tick_Timer_Init               text6        2C1
+__end_of_Timer2_Isr                    text46       145
+__end_of__initialization               cinit        016
+__end_of_inital                        text5        27D
+__end_of_key_Init                      text4        2E9
+__end_of_led_Init                      text3        0FA
+__end_of_main                          maintext     1DD
+__end_of_ramInitial                    text2        24D
+__end_of_sysinitial                    text1        2E5
+__initialization                       cinit        016
+__pbitbssBANK0                         bitbssBANK0  188
+__pbssBANK0                            bssBANK0     010
+__pbssBANK1l                           bssBANK1l    0C0
+__pcstackBANK0                         cstackBANK0  033
+__pcstackCOMMON                        cstackCOMMON 000
+__pintentry                            intentry     008
+__pmaintext                            maintext     1C7
+__ptext0                               text0        000
+__ptext1                               text1        2E1
+__ptext10                              text10       2F9
+__ptext11                              text11       2FC
+__ptext12                              text12       2A6
+__ptext13                              text13       2D2
+__ptext14                              text14       2ED
+__ptext15                              text15       2FF
+__ptext16                              text16       302
+__ptext17                              text17       2D7
+__ptext18                              text18       30E
+__ptext19                              text19       2C1
+__ptext2                               text2        23C
+__ptext20                              text20       308
+__ptext21                              text21       2F1
+__ptext22                              text22       206
+__ptext23                              text23       29E
+__ptext24                              text24       289
+__ptext25                              text25       24D
+__ptext26                              text26       145
+__ptext27                              text27       30A
+__ptext28                              text28       1DD
+__ptext29                              text29       018
+__ptext3                               text3        0C4
+__ptext30                              text30       0FA
+__ptext31                              text31       30F
+__ptext32                              text32       197
+__ptext33                              text33       305
+__ptext34                              text34       2AD
+__ptext35                              text35       295
+__ptext36                              text36       08B
+__ptext37                              text37       218
+__ptext38                              text38       1F2
+__ptext39                              text39       163
+__ptext4                               text4        2E5
+__ptext40                              text40       30C
+__ptext41                              text41       1B0
+__ptext42                              text42       2C7
+__ptext43                              text43       2B4
+__ptext44                              text44       25E
+__ptext45                              text45       2F5
+__ptext46                              text46       123
+__ptext47                              text47       17D
+__ptext48                              text48       2DC
+__ptext49                              text49       22A
+__ptext5                               text5        26E
+__ptext6                               text6        2BB
+__ptext7                               text7        27D
+__ptext8                               text8        2CD
+__ptext9                               text9        2E9
+__size_of_BatteryTick_Ctrl             (abs)        000
+__size_of_Battery_Full_Judg            (abs)        000
+__size_of_Battery_Init                 (abs)        000
+__size_of_Battery_Init_Data            (abs)        000
+__size_of_Battery_LvdDetect            (abs)        000
+__size_of_Battery_Manage               (abs)        000
+__size_of_Battery_StatusJudg           (abs)        000
+__size_of_ChargeDetect_Interrupt_Close (abs)        000
+__size_of_ChargeDetect_Interrupt_Open  (abs)        000
+__size_of_ChargeTick_Ctrl              (abs)        000
+__size_of_Charge_Config                (abs)        000
+__size_of_Charge_Detect                (abs)        000
+__size_of_Charge_Init                  (abs)        000
+__size_of_Charge_Manage                (abs)        000
+__size_of_DelayMs                      (abs)        000
+__size_of_DelayUs2x                    (abs)        000
+__size_of_Eve_Detect                   (abs)        000
+__size_of_Eve_Manage                   (abs)        000
+__size_of_Get_Lvdf                     (abs)        000
+__size_of_Key_Detect                   (abs)        000
+__size_of_Key_Interrupt_Close          (abs)        000
+__size_of_Key_Interrupt_Open           (abs)        000
+__size_of_LED_Color                    (abs)        000
+__size_of_LED_Dim                      (abs)        000
+__size_of_LED_DimIndex_Ctrl            (abs)        000
+__size_of_LED_Manage                   (abs)        000
+__size_of_LED_PWM_Set                  (abs)        000
+__size_of_LED_Status                   (abs)        000
+__size_of_Lvd_Init                     (abs)        000
+__size_of_Power_Init                   (abs)        000
+__size_of_Power_Manage                 (abs)        000
+__size_of_Power_Turn                   (abs)        000
+__size_of_RGB_Init                     (abs)        000
+__size_of_Read_Key                     (abs)        000
+__size_of_SetLVD_Level                 (abs)        000
+__size_of_SleepTick_Ctlr               (abs)        000
+__size_of_Sleep_Init                   (abs)        000
+__size_of_Sleep_Jump                   (abs)        000
+__size_of_Sleep_Manage                 (abs)        000
+__size_of_Sleep_Wakeup                 (abs)        000
+__size_of_TickTimer_Close              (abs)        000
+__size_of_TickTimer_Open               (abs)        000
+__size_of_Tick_Timer_Init              (abs)        000
+__size_of_Timer2_Isr                   (abs)        000
+__size_of_inital                       (abs)        000
+__size_of_key_Init                     (abs)        000
+__size_of_led_Init                     (abs)        000
+__size_of_main                         (abs)        000
+__size_of_ramInitial                   (abs)        000
+__size_of_sysinitial                   (abs)        000
+_inital                                text5        26E
+_key_Init                              text4        2E5
+_led_Init                              text3        0C4
+_main                                  maintext     1C7
+_ramInitial                            text2        23C
+_sysinitial                            text1        2E1
+btemp                                  (abs)        03E
+end_of_initialization                  cinit        016
+interrupt_function                     intentry     008
+intlevel0                              functab      000
+intlevel1                              functab      000
+intlevel2                              functab      000
+intlevel3                              functab      000
+intlevel4                              functab      000
+intlevel5                              functab      000
+reset_vec                              reset_vec    004
+saved_w                                (abs)        03E
+stackhi                                (abs)        000
+stacklo                                (abs)        000
+start                                  init         015
+start_initialization                   cinit        016
+wtemp0                                 (abs)        03E

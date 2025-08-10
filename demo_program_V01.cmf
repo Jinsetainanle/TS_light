@@ -1,0 +1,2008 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$adc.obj
+cinit CODE 0 16 16 2 2
+text1 CODE 0 2E1 2E1 4 2
+text2 CODE 0 23C 23C 11 2
+text3 CODE 0 C4 C4 36 2
+text4 CODE 0 2E5 2E5 4 2
+text5 CODE 0 26E 26E F 2
+text6 CODE 0 2BB 2BB 6 2
+text7 CODE 0 27D 27D C 2
+text8 CODE 0 2CD 2CD 5 2
+text9 CODE 0 2E9 2E9 4 2
+text10 CODE 0 2F9 2F9 3 2
+text11 CODE 0 2FC 2FC 3 2
+text12 CODE 0 2A6 2A6 7 2
+text13 CODE 0 2D2 2D2 5 2
+text14 CODE 0 2ED 2ED 4 2
+text15 CODE 0 2FF 2FF 3 2
+text16 CODE 0 302 302 3 2
+text17 CODE 0 2D7 2D7 5 2
+text18 CODE 0 30E 30E 1 2
+text19 CODE 0 2C1 2C1 6 2
+text20 CODE 0 308 308 2 2
+text21 CODE 0 2F1 2F1 4 2
+text22 CODE 0 206 206 12 2
+text23 CODE 0 29E 29E 8 2
+text24 CODE 0 289 289 C 2
+text25 CODE 0 24D 24D 11 2
+text26 CODE 0 145 145 1E 2
+text27 CODE 0 30A 30A 2 2
+text28 CODE 0 1DD 1DD 15 2
+text29 CODE 0 18 18 73 2
+text30 CODE 0 FA FA 29 2
+text31 CODE 0 30F 30F 1 2
+text32 CODE 0 197 197 19 2
+text33 CODE 0 305 305 3 2
+text34 CODE 0 2AD 2AD 7 2
+text35 CODE 0 295 295 9 2
+text36 CODE 0 8B 8B 39 2
+text37 CODE 0 218 218 12 2
+text38 CODE 0 1F2 1F2 14 2
+text39 CODE 0 163 163 1A 2
+text40 CODE 0 30C 30C 2 2
+text41 CODE 0 1B0 1B0 17 2
+text42 CODE 0 2C7 2C7 6 2
+text43 CODE 0 2B4 2B4 7 2
+text44 CODE 0 25E 25E 10 2
+text45 CODE 0 2F5 2F5 4 2
+text46 CODE 0 123 123 22 2
+text47 CODE 0 17D 17D 1A 2
+text48 CODE 0 2DC 2DC 5 2
+text49 CODE 0 22A 22A 12 2
+maintext CODE 0 1C7 1C7 16 2
+cstackBANK0 BANK0 1 33 33 8 1
+bitbssBANK0 BANK0 1 188 31 D 1
+intentry CODE 0 8 8 D 2
+bssBANK0 BANK0 1 10 10 21 1
+bssBANK1l BANK1 1 C0 C0 12 1
+$startup.obj
+reset_vec CODE 0 4 4 1 2
+end_init CODE 0 15 15 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 3B-3D 1
+RAM 90-BD 1
+RAM D2-DF 1
+BANK0 3B-3D 1
+BANK1 90-BD 1
+BANK1 D2-DF 1
+CONST 5-7 2
+CONST 310-7FF 2
+ENTRY 5-7 2
+ENTRY 310-7FF 2
+IDLOC 2000-2003 2
+STACK 90-BD 1
+CODE 5-7 2
+CODE 310-7FF 2
+SFR0 0-F 1
+SFR1 80-8F 1
+CONFIG 2007-2007 2
+STRCODE 5-7 2
+STRCODE 310-7FF 2
+STRING 5-7 2
+STRING 310-7FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$adc.obj
+16 cinit CODE >970:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+16 cinit CODE >974:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+16 cinit CODE >976:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+16 cinit CODE >982:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+17 cinit CODE >983:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+8 intentry CODE >5222:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+8 intentry CODE >5227:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+8 intentry CODE >5230:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+9 intentry CODE >5231:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+A intentry CODE >5232:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+B intentry CODE >5233:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+C intentry CODE >5234:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+C intentry CODE >5235:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+D intentry CODE >5236:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+E intentry CODE >5237:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+F intentry CODE >5238:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+F intentry CODE >5239:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+10 intentry CODE >5240:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+11 intentry CODE >5241:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+12 intentry CODE >5242:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+13 intentry CODE >5243:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+14 intentry CODE >5244:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+0 pa_nodes0 CODE >875:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 pa_nodes0 CODE >911:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+22A text49 CODE >5396:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+22A text49 CODE >5430:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+22A text49 CODE >5440:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+22B text49 CODE >5441:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+22C text49 CODE >5442:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+22D text49 CODE >5443:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+22E text49 CODE >5444:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+22F text49 CODE >5445:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+230 text49 CODE >5446:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+231 text49 CODE >5447:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+232 text49 CODE >5451:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+233 text49 CODE >5452:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+233 text49 CODE >5456:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+234 text49 CODE >5457:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+235 text49 CODE >5458:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+236 text49 CODE >5462:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+237 text49 CODE >5466:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+238 text49 CODE >5467:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+239 text49 CODE >5468:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+23A text49 CODE >5472:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+23B text49 CODE >5473:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2DC text48 CODE >5342:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2DC text48 CODE >5376:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2DC text48 CODE >5383:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2DD text48 CODE >5384:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2DE text48 CODE >5385:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2DF text48 CODE >5389:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2E0 text48 CODE >5390:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+17D text47 CODE >5248:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+17D text47 CODE >5282:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+17D text47 CODE >5289:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+17E text47 CODE >5290:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+17F text47 CODE >5291:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+180 text47 CODE >5295:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+181 text47 CODE >5296:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+182 text47 CODE >5297:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+183 text47 CODE >5298:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+184 text47 CODE >5299:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+185 text47 CODE >5300:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+186 text47 CODE >5301:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+187 text47 CODE >5302:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+188 text47 CODE >5306:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+189 text47 CODE >5307:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+18A text47 CODE >5308:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+18B text47 CODE >5311:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+18C text47 CODE >5312:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+18C text47 CODE >5317:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+18D text47 CODE >5318:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+18E text47 CODE >5321:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+18F text47 CODE >5322:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+190 text47 CODE >5323:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+191 text47 CODE >5324:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+191 text47 CODE >5329:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+192 text47 CODE >5330:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+193 text47 CODE >5331:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+194 text47 CODE >5334:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+195 text47 CODE >5335:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+196 text47 CODE >5336:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+123 text46 CODE >5111:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+123 text46 CODE >5148:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+123 text46 CODE >5153:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+124 text46 CODE >5157:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+125 text46 CODE >5161:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+126 text46 CODE >5162:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+127 text46 CODE >5166:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+128 text46 CODE >5169:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+129 text46 CODE >5172:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+12A text46 CODE >5173:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+12B text46 CODE >5176:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+12C text46 CODE >5179:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+12D text46 CODE >5180:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+12E text46 CODE >5181:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+12F text46 CODE >5185:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+130 text46 CODE >5188:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+131 text46 CODE >5191:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+132 text46 CODE >5194:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+133 text46 CODE >5197:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+134 text46 CODE >5198:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+134 text46 CODE >5199:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+135 text46 CODE >5200:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+136 text46 CODE >5201:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+137 text46 CODE >5202:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+138 text46 CODE >5203:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+139 text46 CODE >5204:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+13A text46 CODE >5205:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+13B text46 CODE >5206:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+13C text46 CODE >5207:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+13D text46 CODE >5208:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+13E text46 CODE >5209:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+13E text46 CODE >5210:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+13F text46 CODE >5211:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+140 text46 CODE >5212:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+141 text46 CODE >5213:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+142 text46 CODE >5214:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+143 text46 CODE >5215:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+144 text46 CODE >5217:D:\оʥ\HC18M121B1_test_ADC_program (2)\interrupt.c
+2F5 text45 CODE >5058:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F5 text45 CODE >5093:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F5 text45 CODE >5099:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F6 text45 CODE >5100:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F6 text45 CODE >5103:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F7 text45 CODE >5104:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F8 text45 CODE >5105:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+25E text44 CODE >4987:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+25E text44 CODE >5024:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+25E text44 CODE >5026:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+25E text44 CODE >5032:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+25F text44 CODE >5033:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+260 text44 CODE >5034:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+261 text44 CODE >5035:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+262 text44 CODE >5036:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+263 text44 CODE >5037:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+264 text44 CODE >5038:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+265 text44 CODE >5039:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+266 text44 CODE >5040:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+267 text44 CODE >5041:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+268 text44 CODE >5042:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+269 text44 CODE >5043:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+269 text44 CODE >5047:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+26A text44 CODE >5048:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+26B text44 CODE >5051:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+26C text44 CODE >5052:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+26D text44 CODE >5053:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2B4 text43 CODE >4923:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2B4 text43 CODE >4959:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2B4 text43 CODE >4966:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2B5 text43 CODE >4969:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2B6 text43 CODE >4970:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2B7 text43 CODE >4974:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2B8 text43 CODE >4975:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2B9 text43 CODE >4976:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2B9 text43 CODE >4980:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2BA text43 CODE >4981:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2C7 text42 CODE >4867:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2C7 text42 CODE >4902:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2C7 text42 CODE >4909:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2C8 text42 CODE >4910:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2C9 text42 CODE >4913:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2CA text42 CODE >4914:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2CB text42 CODE >4917:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2CC text42 CODE >4918:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B0 text41 CODE >4766:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B0 text41 CODE >4805:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B0 text41 CODE >4807:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B0 text41 CODE >4813:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B1 text41 CODE >4816:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B2 text41 CODE >4819:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B3 text41 CODE >4820:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B3 text41 CODE >4824:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B4 text41 CODE >4825:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B5 text41 CODE >4826:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B6 text41 CODE >4827:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B7 text41 CODE >4830:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B8 text41 CODE >4831:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1B9 text41 CODE >4835:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1BA text41 CODE >4836:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1BB text41 CODE >4837:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1BC text41 CODE >4838:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1BD text41 CODE >4839:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1BE text41 CODE >4840:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1BF text41 CODE >4845:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1C0 text41 CODE >4846:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1C1 text41 CODE >4847:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1C2 text41 CODE >4851:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1C3 text41 CODE >4854:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1C4 text41 CODE >4855:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1C4 text41 CODE >4860:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1C5 text41 CODE >4861:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1C6 text41 CODE >4862:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+30C text40 CODE >4716:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+30C text40 CODE >4751:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+30C text40 CODE >4758:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+30D text40 CODE >4761:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+163 text39 CODE >4613:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+163 text39 CODE >4648:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+163 text39 CODE >4655:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+164 text39 CODE >4656:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+165 text39 CODE >4657:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+166 text39 CODE >4658:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+167 text39 CODE >4662:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+168 text39 CODE >4665:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+169 text39 CODE >4666:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+16A text39 CODE >4667:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+16B text39 CODE >4668:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+16C text39 CODE >4672:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+16D text39 CODE >4675:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+16E text39 CODE >4678:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+16F text39 CODE >4679:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+170 text39 CODE >4680:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+171 text39 CODE >4684:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+172 text39 CODE >4687:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+173 text39 CODE >4688:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+174 text39 CODE >4689:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+174 text39 CODE >4690:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+175 text39 CODE >4695:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+176 text39 CODE >4698:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+177 text39 CODE >4701:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+178 text39 CODE >4702:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+179 text39 CODE >4703:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+17A text39 CODE >4707:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+17B text39 CODE >4710:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+17C text39 CODE >4711:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F2 text38 CODE >4521:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F2 text38 CODE >4556:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F2 text38 CODE >4563:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F3 text38 CODE >4564:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F4 text38 CODE >4565:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F5 text38 CODE >4566:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F6 text38 CODE >4570:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F7 text38 CODE >4573:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F8 text38 CODE >4576:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1F9 text38 CODE >4577:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1FA text38 CODE >4578:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1FB text38 CODE >4582:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1FC text38 CODE >4585:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1FD text38 CODE >4586:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1FE text38 CODE >4587:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1FE text38 CODE >4592:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+1FF text38 CODE >4595:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+200 text38 CODE >4598:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+201 text38 CODE >4599:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+202 text38 CODE >4600:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+203 text38 CODE >4604:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+204 text38 CODE >4607:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+205 text38 CODE >4608:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+218 text37 CODE >4429:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+218 text37 CODE >4464:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+218 text37 CODE >4470:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+219 text37 CODE >4473:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+21A text37 CODE >4474:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+21B text37 CODE >4477:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+21C text37 CODE >4478:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+21C text37 CODE >4481:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+21D text37 CODE >4482:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+21E text37 CODE >4483:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+21E text37 CODE >4488:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+21F text37 CODE >4489:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+21F text37 CODE >4490:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+220 text37 CODE >4493:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+221 text37 CODE >4494:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+221 text37 CODE >4495:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+222 text37 CODE >4505:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+223 text37 CODE >4506:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+224 text37 CODE >4507:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+225 text37 CODE >4508:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+226 text37 CODE >4509:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+227 text37 CODE >4510:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+228 text37 CODE >4512:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+228 text37 CODE >4515:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+229 text37 CODE >4516:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+8B text36 CODE >4238:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+8B text36 CODE >4273:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+8B text36 CODE >4275:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+8B text36 CODE >4282:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+8C text36 CODE >4283:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+8D text36 CODE >4284:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+8E text36 CODE >4287:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+8F text36 CODE >4290:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+90 text36 CODE >4291:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+90 text36 CODE >4295:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+91 text36 CODE >4296:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+92 text36 CODE >4297:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+93 text36 CODE >4298:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+94 text36 CODE >4302:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+95 text36 CODE >4305:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+96 text36 CODE >4306:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+97 text36 CODE >4307:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+98 text36 CODE >4311:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+99 text36 CODE >4314:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+9A text36 CODE >4317:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+9B text36 CODE >4320:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+9C text36 CODE >4321:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+9D text36 CODE >4322:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+9E text36 CODE >4323:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+9F text36 CODE >4327:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A0 text36 CODE >4328:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A0 text36 CODE >4331:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A1 text36 CODE >4332:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A1 text36 CODE >4335:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A2 text36 CODE >4338:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A3 text36 CODE >4341:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A4 text36 CODE >4342:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A4 text36 CODE >4347:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A5 text36 CODE >4348:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A6 text36 CODE >4349:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A7 text36 CODE >4350:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A8 text36 CODE >4354:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+A9 text36 CODE >4355:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+AA text36 CODE >4358:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+AB text36 CODE >4359:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+AB text36 CODE >4363:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+AC text36 CODE >4364:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+AD text36 CODE >4365:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+AE text36 CODE >4369:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+AF text36 CODE >4372:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B0 text36 CODE >4375:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B1 text36 CODE >4378:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B2 text36 CODE >4379:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B3 text36 CODE >4380:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B4 text36 CODE >4384:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B5 text36 CODE >4387:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B6 text36 CODE >4388:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B7 text36 CODE >4389:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B7 text36 CODE >4393:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B8 text36 CODE >4397:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+B9 text36 CODE >4398:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+BA text36 CODE >4399:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+BA text36 CODE >4400:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+BB text36 CODE >4405:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+BC text36 CODE >4408:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+BD text36 CODE >4411:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+BE text36 CODE >4414:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+BF text36 CODE >4415:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+C0 text36 CODE >4416:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+C1 text36 CODE >4417:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+C2 text36 CODE >4421:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+C3 text36 CODE >4424:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+295 text35 CODE >4161:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+295 text35 CODE >4198:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+295 text35 CODE >4205:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+296 text35 CODE >4208:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+297 text35 CODE >4209:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+298 text35 CODE >4213:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+299 text35 CODE >4216:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+29A text35 CODE >4217:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+29A text35 CODE >4222:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+29B text35 CODE >4225:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+29C text35 CODE >4228:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+29D text35 CODE >4229:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+29D text35 CODE >4233:D:\оʥ\HC18M121B1_test_ADC_program (2)\battery.c
+2AD text34 CODE >4097:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2AD text34 CODE >4132:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2AD text34 CODE >4139:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2AE text34 CODE >4142:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2AF text34 CODE >4145:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2B0 text34 CODE >4148:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2B1 text34 CODE >4151:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2B2 text34 CODE >4154:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+2B3 text34 CODE >4155:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+305 text33 CODE >4046:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+305 text33 CODE >4081:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+305 text33 CODE >4088:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+306 text33 CODE >4091:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+307 text33 CODE >4092:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+197 text32 CODE >3943:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+197 text32 CODE >3978:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+197 text32 CODE >3980:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+197 text32 CODE >3986:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+198 text32 CODE >3987:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+199 text32 CODE >3988:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+19A text32 CODE >3989:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+19B text32 CODE >3993:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+19C text32 CODE >3996:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+19D text32 CODE >3997:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+19E text32 CODE >3998:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+19F text32 CODE >4002:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A0 text32 CODE >4005:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A1 text32 CODE >4008:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A2 text32 CODE >4009:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A3 text32 CODE >4010:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A4 text32 CODE >4014:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A5 text32 CODE >4017:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A6 text32 CODE >4018:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A7 text32 CODE >4019:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A7 text32 CODE >4020:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A8 text32 CODE >4025:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1A9 text32 CODE >4028:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1AA text32 CODE >4031:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1AB text32 CODE >4032:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1AC text32 CODE >4033:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1AD text32 CODE >4037:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1AE text32 CODE >4040:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+1AF text32 CODE >4041:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+30F text31 CODE >3896:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+30F text31 CODE >3931:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+30F text31 CODE >3938:D:\оʥ\HC18M121B1_test_ADC_program (2)\charge.c
+FA text30 CODE >3736:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+FA text30 CODE >3771:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+FA text30 CODE >3773:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+FA text30 CODE >3779:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+FB text30 CODE >3780:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+FC text30 CODE >3781:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+FD text30 CODE >3782:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+FD text30 CODE >3788:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+FE text30 CODE >3789:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+FF text30 CODE >3793:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+100 text30 CODE >3796:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+101 text30 CODE >3799:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+102 text30 CODE >3800:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+103 text30 CODE >3801:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+104 text30 CODE >3802:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+104 text30 CODE >3807:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+105 text30 CODE >3808:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+106 text30 CODE >3812:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+107 text30 CODE >3815:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+108 text30 CODE >3818:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+109 text30 CODE >3819:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+10A text30 CODE >3820:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+10A text30 CODE >3821:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+10B text30 CODE >3831:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+10C text30 CODE >3832:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+10D text30 CODE >3833:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+10E text30 CODE >3834:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+10F text30 CODE >3835:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+110 text30 CODE >3836:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+111 text30 CODE >3838:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+111 text30 CODE >3841:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+112 text30 CODE >3842:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+113 text30 CODE >3846:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+114 text30 CODE >3849:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+115 text30 CODE >3850:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+115 text30 CODE >3854:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+116 text30 CODE >3855:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+117 text30 CODE >3859:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+118 text30 CODE >3862:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+119 text30 CODE >3863:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+11A text30 CODE >3864:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+11A text30 CODE >3869:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+11B text30 CODE >3872:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+11C text30 CODE >3875:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+11D text30 CODE >3876:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+11E text30 CODE >3880:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+11F text30 CODE >3883:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+120 text30 CODE >3886:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+121 text30 CODE >3889:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+122 text30 CODE >3890:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+18 text29 CODE >3495:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+18 text29 CODE >3531:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+18 text29 CODE >3533:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+18 text29 CODE >3539:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+19 text29 CODE >3540:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1A text29 CODE >3544:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1B text29 CODE >3545:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1C text29 CODE >3546:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1D text29 CODE >3547:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E text29 CODE >3548:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1F text29 CODE >3549:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+20 text29 CODE >3550:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+21 text29 CODE >3554:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+22 text29 CODE >3555:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+23 text29 CODE >3556:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+24 text29 CODE >3557:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+24 text29 CODE >3561:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+25 text29 CODE >3562:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+26 text29 CODE >3563:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+27 text29 CODE >3564:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+28 text29 CODE >3565:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+29 text29 CODE >3566:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2A text29 CODE >3567:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2B text29 CODE >3571:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2C text29 CODE >3572:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2D text29 CODE >3575:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2E text29 CODE >3578:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2F text29 CODE >3581:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+30 text29 CODE >3584:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+31 text29 CODE >3585:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+32 text29 CODE >3586:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+33 text29 CODE >3587:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+33 text29 CODE >3592:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+34 text29 CODE >3593:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+35 text29 CODE >3594:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+36 text29 CODE >3595:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+37 text29 CODE >3596:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+38 text29 CODE >3597:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+39 text29 CODE >3598:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+3A text29 CODE >3599:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+3B text29 CODE >3600:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+3C text29 CODE >3601:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+3D text29 CODE >3602:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+3E text29 CODE >3603:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+3F text29 CODE >3604:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+40 text29 CODE >3605:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+41 text29 CODE >3609:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+42 text29 CODE >3610:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+43 text29 CODE >3614:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+44 text29 CODE >3617:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+45 text29 CODE >3618:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+46 text29 CODE >3619:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+47 text29 CODE >3623:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+48 text29 CODE >3624:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+49 text29 CODE >3627:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+4A text29 CODE >3628:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+4B text29 CODE >3629:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+4C text29 CODE >3630:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+4D text29 CODE >3633:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+4E text29 CODE >3634:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+4E text29 CODE >3637:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+4F text29 CODE >3638:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+50 text29 CODE >3642:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+51 text29 CODE >3643:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+52 text29 CODE >3644:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+53 text29 CODE >3645:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+54 text29 CODE >3646:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+55 text29 CODE >3647:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+56 text29 CODE >3648:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+57 text29 CODE >3649:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+58 text29 CODE >3650:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+59 text29 CODE >3651:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+5A text29 CODE >3654:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+5B text29 CODE >3655:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+5C text29 CODE >3656:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+5D text29 CODE >3657:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+5E text29 CODE >3658:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+5F text29 CODE >3659:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+60 text29 CODE >3660:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+61 text29 CODE >3664:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+62 text29 CODE >3665:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+63 text29 CODE >3666:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+63 text29 CODE >3669:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+64 text29 CODE >3670:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+64 text29 CODE >3671:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+65 text29 CODE >3672:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+66 text29 CODE >3673:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+67 text29 CODE >3674:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+68 text29 CODE >3675:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+69 text29 CODE >3676:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+6A text29 CODE >3677:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+6B text29 CODE >3678:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+6C text29 CODE >3679:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+6D text29 CODE >3680:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+6E text29 CODE >3681:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+6F text29 CODE >3682:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+70 text29 CODE >3683:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+71 text29 CODE >3684:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+71 text29 CODE >3687:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+72 text29 CODE >3688:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+73 text29 CODE >3692:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+74 text29 CODE >3693:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+75 text29 CODE >3694:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+76 text29 CODE >3695:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+77 text29 CODE >3696:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+78 text29 CODE >3697:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+79 text29 CODE >3698:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+7A text29 CODE >3699:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+7B text29 CODE >3700:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+7C text29 CODE >3701:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+7D text29 CODE >3704:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+7E text29 CODE >3705:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+7F text29 CODE >3706:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+80 text29 CODE >3707:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+81 text29 CODE >3708:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+82 text29 CODE >3709:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+83 text29 CODE >3710:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+84 text29 CODE >3711:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+84 text29 CODE >3715:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+85 text29 CODE >3718:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+86 text29 CODE >3719:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+87 text29 CODE >3720:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+87 text29 CODE >3725:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+88 text29 CODE >3726:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+89 text29 CODE >3729:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+8A text29 CODE >3730:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1DD text28 CODE >3416:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1DD text28 CODE >3451:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1DD text28 CODE >3459:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1DE text28 CODE >3460:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1DF text28 CODE >3461:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E0 text28 CODE >3464:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E1 text28 CODE >3467:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E2 text28 CODE >3468:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E3 text28 CODE >3469:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E4 text28 CODE >3472:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E5 text28 CODE >3473:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E6 text28 CODE >3474:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E7 text28 CODE >3475:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E8 text28 CODE >3476:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1E9 text28 CODE >3477:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1EA text28 CODE >3478:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1EB text28 CODE >3481:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1EC text28 CODE >3482:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1ED text28 CODE >3483:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1ED text28 CODE >3486:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1EE text28 CODE >3487:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1EF text28 CODE >3488:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1F0 text28 CODE >3489:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+1F1 text28 CODE >3490:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+30A text27 CODE >3364:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+30A text27 CODE >3400:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+30A text27 CODE >3407:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+30B text27 CODE >3410:D:\оʥ\HC18M121B1_test_ADC_program (2)\eve.c
+145 text26 CODE >3235:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+145 text26 CODE >3270:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+145 text26 CODE >3277:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+146 text26 CODE >3278:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+147 text26 CODE >3282:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+148 text26 CODE >3285:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+149 text26 CODE >3286:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+149 text26 CODE >3291:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+14A text26 CODE >3292:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+14B text26 CODE >3293:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+14B text26 CODE >3297:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+14C text26 CODE >3298:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+14D text26 CODE >3301:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+14E text26 CODE >3302:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+14E text26 CODE >3306:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+14F text26 CODE >3309:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+150 text26 CODE >3310:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+151 text26 CODE >3314:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+152 text26 CODE >3315:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+152 text26 CODE >3319:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+153 text26 CODE >3322:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+154 text26 CODE >3323:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+155 text26 CODE >3327:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+156 text26 CODE >3328:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+156 text26 CODE >3331:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+157 text26 CODE >3332:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+158 text26 CODE >3335:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+159 text26 CODE >3336:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+15A text26 CODE >3339:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+15B text26 CODE >3340:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+15B text26 CODE >3341:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+15C text26 CODE >3351:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+15D text26 CODE >3352:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+15E text26 CODE >3353:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+15F text26 CODE >3354:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+160 text26 CODE >3355:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+161 text26 CODE >3356:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+162 text26 CODE >3357:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+24D text25 CODE >3149:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+24D text25 CODE >3184:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+24D text25 CODE >3191:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+24E text25 CODE >3192:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+24F text25 CODE >3196:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+250 text25 CODE >3199:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+251 text25 CODE >3200:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+252 text25 CODE >3201:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+253 text25 CODE >3202:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+254 text25 CODE >3206:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+255 text25 CODE >3209:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+256 text25 CODE >3210:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+257 text25 CODE >3214:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+258 text25 CODE >3215:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+259 text25 CODE >3216:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+259 text25 CODE >3221:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+25A text25 CODE >3224:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+25B text25 CODE >3225:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+25C text25 CODE >3229:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+25D text25 CODE >3230:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+289 text24 CODE >3087:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+289 text24 CODE >3122:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+289 text24 CODE >3129:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+28A text24 CODE >3132:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+28B text24 CODE >3133:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+28C text24 CODE >3134:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+28D text24 CODE >3135:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+28E text24 CODE >3136:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+28F text24 CODE >3139:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+290 text24 CODE >3140:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+291 text24 CODE >3141:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+292 text24 CODE >3142:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+293 text24 CODE >3143:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+294 text24 CODE >3144:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+29E text23 CODE >3030:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+29E text23 CODE >3065:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+29E text23 CODE >3067:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+29E text23 CODE >3073:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+29F text23 CODE >3074:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2A0 text23 CODE >3075:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2A1 text23 CODE >3078:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2A2 text23 CODE >3079:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2A3 text23 CODE >3080:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2A4 text23 CODE >3081:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2A5 text23 CODE >3082:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+206 text22 CODE >2949:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+206 text22 CODE >2984:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+206 text22 CODE >2991:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+207 text22 CODE >2992:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+208 text22 CODE >2995:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+209 text22 CODE >2996:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+20A text22 CODE >2999:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+20B text22 CODE >3000:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+20C text22 CODE >3003:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+20D text22 CODE >3004:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+20E text22 CODE >3008:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+20F text22 CODE >3011:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+210 text22 CODE >3012:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+210 text22 CODE >3016:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+211 text22 CODE >3017:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+212 text22 CODE >3018:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+213 text22 CODE >3021:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+214 text22 CODE >3022:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+215 text22 CODE >3023:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+216 text22 CODE >3024:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+217 text22 CODE >3025:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2F1 text21 CODE >2890:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2F1 text21 CODE >2928:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2F1 text21 CODE >2935:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2F2 text21 CODE >2938:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2F3 text21 CODE >2941:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+2F4 text21 CODE >2944:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+308 text20 CODE >2841:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+308 text20 CODE >2876:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+308 text20 CODE >2883:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+309 text20 CODE >2884:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C1 text19 CODE >2778:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C1 text19 CODE >2813:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C1 text19 CODE >2815:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C1 text19 CODE >2821:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C2 text19 CODE >2822:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C3 text19 CODE >2826:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C4 text19 CODE >2829:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C5 text19 CODE >2830:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C5 text19 CODE >2835:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2C6 text19 CODE >2836:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+30E text18 CODE >2731:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+30E text18 CODE >2766:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+30E text18 CODE >2773:D:\оʥ\HC18M121B1_test_ADC_program (2)\power.c
+2D7 text17 CODE >2673:D:\оʥ\HC18M121B1_test_ADC_program (2)\rgb.c
+2D7 text17 CODE >2708:D:\оʥ\HC18M121B1_test_ADC_program (2)\rgb.c
+2D7 text17 CODE >2715:D:\оʥ\HC18M121B1_test_ADC_program (2)\rgb.c
+2D8 text17 CODE >2718:D:\оʥ\HC18M121B1_test_ADC_program (2)\rgb.c
+2D9 text17 CODE >2721:D:\оʥ\HC18M121B1_test_ADC_program (2)\rgb.c
+2DA text17 CODE >2724:D:\оʥ\HC18M121B1_test_ADC_program (2)\rgb.c
+2DB text17 CODE >2725:D:\оʥ\HC18M121B1_test_ADC_program (2)\rgb.c
+302 text16 CODE >2621:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+302 text16 CODE >2656:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+302 text16 CODE >2663:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+303 text16 CODE >2666:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+304 text16 CODE >2667:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2FF text15 CODE >2570:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2FF text15 CODE >2605:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2FF text15 CODE >2612:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+300 text15 CODE >2615:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+301 text15 CODE >2616:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2ED text14 CODE >2516:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2ED text14 CODE >2551:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2ED text14 CODE >2558:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2EE text14 CODE >2561:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2EF text14 CODE >2564:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F0 text14 CODE >2565:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2D2 text13 CODE >2456:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2D2 text13 CODE >2493:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2D2 text13 CODE >2500:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2D3 text13 CODE >2503:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2D4 text13 CODE >2506:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2D5 text13 CODE >2509:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2D6 text13 CODE >2510:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2A6 text12 CODE >2403:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2A6 text12 CODE >2438:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2A6 text12 CODE >2445:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2A7 text12 CODE >2446:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2A8 text12 CODE >2447:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2A9 text12 CODE >2448:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2AA text12 CODE >2449:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2AB text12 CODE >2450:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2AC text12 CODE >2451:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2FC text11 CODE >2351:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2FC text11 CODE >2386:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2FC text11 CODE >2393:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2FD text11 CODE >2396:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2FE text11 CODE >2397:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F9 text10 CODE >2300:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F9 text10 CODE >2335:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2F9 text10 CODE >2342:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2FA text10 CODE >2345:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2FB text10 CODE >2346:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2E9 text9 CODE >2244:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2E9 text9 CODE >2280:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2E9 text9 CODE >2282:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2E9 text9 CODE >2288:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2EA text9 CODE >2291:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2EB text9 CODE >2294:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2EC text9 CODE >2295:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2CD text8 CODE >2183:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2CD text8 CODE >2220:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2CD text8 CODE >2222:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2CD text8 CODE >2228:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2CE text8 CODE >2231:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2CF text8 CODE >2234:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2D0 text8 CODE >2237:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2D1 text8 CODE >2238:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+27D text7 CODE >2108:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+27D text7 CODE >2147:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+27D text7 CODE >2154:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+27E text7 CODE >2155:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+27F text7 CODE >2159:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+280 text7 CODE >2162:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+281 text7 CODE >2165:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+282 text7 CODE >2168:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+283 text7 CODE >2169:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+284 text7 CODE >2170:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+285 text7 CODE >2171:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+286 text7 CODE >2172:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+287 text7 CODE >2175:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+288 text7 CODE >2178:D:\оʥ\HC18M121B1_test_ADC_program (2)\sleep.c
+2BB text6 CODE >2049:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2BB text6 CODE >2084:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2BB text6 CODE >2091:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2BC text6 CODE >2092:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2BD text6 CODE >2093:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2BE text6 CODE >2096:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2BF text6 CODE >2099:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+2C0 text6 CODE >2102:D:\оʥ\HC18M121B1_test_ADC_program (2)\driver.c
+26E text5 CODE >1963:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+26E text5 CODE >1998:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+26E text5 CODE >2005:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+26F text5 CODE >2008:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+270 text5 CODE >2011:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+271 text5 CODE >2014:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+272 text5 CODE >2017:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+273 text5 CODE >2020:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+274 text5 CODE >2023:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+275 text5 CODE >2024:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+276 text5 CODE >2027:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+277 text5 CODE >2030:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+278 text5 CODE >2033:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+279 text5 CODE >2036:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+27A text5 CODE >2039:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+27B text5 CODE >2042:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+27C text5 CODE >2043:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+2E5 text4 CODE >1908:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2E5 text4 CODE >1943:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2E5 text4 CODE >1950:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2E6 text4 CODE >1953:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2E7 text4 CODE >1956:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+2E8 text4 CODE >1957:D:\оʥ\HC18M121B1_test_ADC_program (2)\key.c
+C4 text3 CODE >1747:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+C4 text3 CODE >1782:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+C4 text3 CODE >1789:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+C5 text3 CODE >1792:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+C6 text3 CODE >1795:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+C7 text3 CODE >1798:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+C8 text3 CODE >1801:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+C9 text3 CODE >1804:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+CA text3 CODE >1805:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+CB text3 CODE >1808:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+CC text3 CODE >1809:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+CD text3 CODE >1812:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+CE text3 CODE >1815:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+CF text3 CODE >1816:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D0 text3 CODE >1819:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D1 text3 CODE >1822:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D2 text3 CODE >1823:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D3 text3 CODE >1826:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D4 text3 CODE >1827:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D5 text3 CODE >1830:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D6 text3 CODE >1833:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D7 text3 CODE >1834:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D8 text3 CODE >1837:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+D9 text3 CODE >1840:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+DA text3 CODE >1841:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+DB text3 CODE >1844:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+DC text3 CODE >1847:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+DD text3 CODE >1848:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+DE text3 CODE >1849:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+DF text3 CODE >1852:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E0 text3 CODE >1853:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E1 text3 CODE >1856:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E2 text3 CODE >1857:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E3 text3 CODE >1860:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E4 text3 CODE >1861:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E5 text3 CODE >1864:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E6 text3 CODE >1865:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E7 text3 CODE >1868:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E8 text3 CODE >1869:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+E9 text3 CODE >1872:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+EA text3 CODE >1873:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+EB text3 CODE >1876:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+EC text3 CODE >1877:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+ED text3 CODE >1880:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+EE text3 CODE >1881:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+EF text3 CODE >1884:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F0 text3 CODE >1885:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F1 text3 CODE >1888:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F2 text3 CODE >1889:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F3 text3 CODE >1892:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F4 text3 CODE >1893:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F5 text3 CODE >1896:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F6 text3 CODE >1897:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F7 text3 CODE >1900:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F8 text3 CODE >1901:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+F9 text3 CODE >1902:D:\оʥ\HC18M121B1_test_ADC_program (2)\led.c
+23C text2 CODE >1667:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+23C text2 CODE >1702:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+23C text2 CODE >1709:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+23D text2 CODE >1710:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+23E text2 CODE >1711:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+23E text2 CODE >1714:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+23F text2 CODE >1717:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+240 text2 CODE >1720:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+241 text2 CODE >1721:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+242 text2 CODE >1722:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+243 text2 CODE >1723:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+244 text2 CODE >1726:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+245 text2 CODE >1727:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+246 text2 CODE >1728:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+246 text2 CODE >1731:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+247 text2 CODE >1734:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+248 text2 CODE >1737:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+249 text2 CODE >1738:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+24A text2 CODE >1739:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+24B text2 CODE >1740:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+24C text2 CODE >1741:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+2E1 text1 CODE >1615:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+2E1 text1 CODE >1650:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+2E1 text1 CODE >1657:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+2E2 text1 CODE >1660:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+2E3 text1 CODE >1661:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+2E4 text1 CODE >1662:D:\оʥ\HC18M121B1_test_ADC_program (2)\inital.c
+1C7 maintext CODE >1492:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1C7 maintext CODE >1545:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1C7 maintext CODE >1552:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1C8 maintext CODE >1555:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1C9 maintext CODE >1558:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1CA maintext CODE >1561:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1CB maintext CODE >1562:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1CC maintext CODE >1563:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1CD maintext CODE >1564:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1CE maintext CODE >1567:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1CF maintext CODE >1570:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D0 maintext CODE >1573:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D1 maintext CODE >1576:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D2 maintext CODE >1579:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D3 maintext CODE >1582:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D4 maintext CODE >1585:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D5 maintext CODE >1588:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D6 maintext CODE >1589:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D6 maintext CODE >1593:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D7 maintext CODE >1596:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D8 maintext CODE >1599:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1D9 maintext CODE >1602:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1DA maintext CODE >1605:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1DB maintext CODE >1608:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+1DC maintext CODE >1609:D:\оʥ\HC18M121B1_test_ADC_program (2)\main.c
+33 cstackBANK0 BANK0 >1282:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1286:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1287:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1290:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1293:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1296:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1299:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1302:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1305:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1308:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1311:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1314:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1317:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1320:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1323:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1326:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1329:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1332:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1335:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1338:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1341:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1344:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1347:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1350:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1353:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1356:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1359:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1362:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1365:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1368:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1371:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1374:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1377:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1380:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1383:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1386:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1389:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1392:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1395:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1398:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1401:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1404:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1407:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1410:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1413:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1416:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1419:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1422:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1425:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+33 cstackBANK0 BANK0 >1428:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+35 cstackBANK0 BANK0 >1434:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+35 cstackBANK0 BANK0 >1435:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+35 cstackBANK0 BANK0 >1439:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+35 cstackBANK0 BANK0 >1443:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+35 cstackBANK0 BANK0 >1447:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+35 cstackBANK0 BANK0 >1451:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+35 cstackBANK0 BANK0 >1455:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+36 cstackBANK0 BANK0 >1462:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+36 cstackBANK0 BANK0 >1463:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+37 cstackBANK0 BANK0 >1470:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+38 cstackBANK0 BANK0 >1475:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+39 cstackBANK0 BANK0 >1480:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+39 cstackBANK0 BANK0 >1482:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1133:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1135:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1136:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1139:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1142:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1145:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1148:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1151:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1154:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1157:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1160:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1163:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1166:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1169:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1172:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1175:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1178:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1181:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1184:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1187:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1190:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1193:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1196:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1199:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1202:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1205:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1208:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1211:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1214:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1217:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1220:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1223:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1226:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1229:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1232:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1235:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1238:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1241:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1244:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1247:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1250:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1253:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1256:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1259:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1262:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1265:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1268:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1271:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1274:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 cstackCOMMON COMMON >1277:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+C0 bssBANK1l BANK1 >1117:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+C0 bssBANK1l BANK1 >1119:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+C7 bssBANK1l BANK1 >1122:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+CE bssBANK1l BANK1 >1125:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+D0 bssBANK1l BANK1 >1128:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+188 bitbssBANK0 BANK0 >1074:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+188 bitbssBANK0 BANK0 >1076:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+189 bitbssBANK0 BANK0 >1079:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+18A bitbssBANK0 BANK0 >1082:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+18B bitbssBANK0 BANK0 >1085:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+18C bitbssBANK0 BANK0 >1088:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+18D bitbssBANK0 BANK0 >1091:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+18E bitbssBANK0 BANK0 >1094:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+18F bitbssBANK0 BANK0 >1097:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+190 bitbssBANK0 BANK0 >1100:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+191 bitbssBANK0 BANK0 >1103:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+192 bitbssBANK0 BANK0 >1106:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+193 bitbssBANK0 BANK0 >1109:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+194 bitbssBANK0 BANK0 >1112:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+10 bssBANK0 BANK0 >986:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+10 bssBANK0 BANK0 >988:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+12 bssBANK0 BANK0 >991:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+14 bssBANK0 BANK0 >994:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+16 bssBANK0 BANK0 >997:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+18 bssBANK0 BANK0 >1000:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+1A bssBANK0 BANK0 >1003:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+1B bssBANK0 BANK0 >1006:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+1C bssBANK0 BANK0 >1009:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+1D bssBANK0 BANK0 >1012:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+1E bssBANK0 BANK0 >1015:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+1F bssBANK0 BANK0 >1018:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+20 bssBANK0 BANK0 >1021:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+21 bssBANK0 BANK0 >1024:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+22 bssBANK0 BANK0 >1027:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+23 bssBANK0 BANK0 >1030:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+24 bssBANK0 BANK0 >1033:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+25 bssBANK0 BANK0 >1036:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+26 bssBANK0 BANK0 >1039:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+27 bssBANK0 BANK0 >1042:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+28 bssBANK0 BANK0 >1045:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+29 bssBANK0 BANK0 >1048:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+2A bssBANK0 BANK0 >1051:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+2B bssBANK0 BANK0 >1054:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+2C bssBANK0 BANK0 >1057:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+2D bssBANK0 BANK0 >1060:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+2E bssBANK0 BANK0 >1063:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+2F bssBANK0 BANK0 >1066:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+30 bssBANK0 BANK0 >1069:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+0 text0 CODE >950:D:\оʥ\HC18M121B1_test_ADC_program (2)\adc.as
+$startup.obj
+15 end_init CODE >75:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+15 init CODE >72:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+0 functab ENTRY >38:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+0 functab ENTRY >39:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+0 functab ENTRY >40:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+0 functab ENTRY >41:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+0 functab ENTRY >42:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+0 functab ENTRY >43:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+4 reset_vec CODE >62:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+4 reset_vec CODE >67:D:\оʥ\HC18M121B1_test_ADC_program (2)\startup.as
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - adc.obj
+_Battery_Full_Judg 2C6 0 CODE 0 text39 adc.obj
+__end_of_Key_Interrupt_Open 604 0 CODE 0 text15 adc.obj
+__size_of_DelayMs 0 0 ABS 0 - adc.obj
+_BatteryCurrCheckLevel 28 0 BANK0 1 bssBANK0 adc.obj
+__size_of_Read_Key 0 0 ABS 0 - adc.obj
+__Hspace_0 310 0 ABS 0 - -
+__Hspace_1 195 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+_sysinitial 5C2 0 CODE 0 text1 adc.obj
+__size_of_SleepTick_Ctlr 0 0 ABS 0 - adc.obj
+Key_Detect@sys_time 14 0 BANK0 1 bssBANK0 adc.obj
+__size_of_Get_Lvdf 0 0 ABS 0 - adc.obj
+__size_of_led_Init 0 0 ABS 0 - adc.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_T1 4D 0 ABS 1 - adc.obj
+_T2 52 0 ABS 1 - adc.obj
+__Hstrings 0 0 ABS 0 strings -
+__end_of_ramInitial 49A 0 CODE 0 text2 adc.obj
+_LED_Manage 5E2 0 CODE 0 text21 adc.obj
+_ADEN 2D0 0 ABS 1 - adc.obj
+_ADON 2D1 0 ABS 1 - adc.obj
+_CHS0 2D2 0 ABS 1 - adc.obj
+_CHS1 2D3 0 ABS 1 - adc.obj
+_CHS2 2D4 0 ABS 1 - adc.obj
+_CHS3 2D5 0 ABS 1 - adc.obj
+_Cnt1 23 0 BANK0 1 bssBANK0 adc.obj
+_Cnt2 22 0 BANK0 1 bssBANK0 adc.obj
+_INDF 0 0 ABS 0 - adc.obj
+_IOCA 7 0 ABS 0 - adc.obj
+_IOCB 9 0 ABS 0 - adc.obj
+_LVDF 47 0 ABS 0 - adc.obj
+_PBIE 71 0 ABS 0 - adc.obj
+_PBIF 74 0 ABS 0 - adc.obj
+_PDA0 210 0 ABS 1 - adc.obj
+_PDA1 211 0 ABS 1 - adc.obj
+_PDA2 212 0 ABS 1 - adc.obj
+_PDA3 213 0 ABS 1 - adc.obj
+_PDA4 214 0 ABS 1 - adc.obj
+_PDA5 215 0 ABS 1 - adc.obj
+_PDA6 216 0 ABS 1 - adc.obj
+_PDA7 217 0 ABS 1 - adc.obj
+_PHA0 218 0 ABS 1 - adc.obj
+_PHA1 219 0 ABS 1 - adc.obj
+_PHA2 21A 0 ABS 1 - adc.obj
+_PHA3 21B 0 ABS 1 - adc.obj
+_PHA4 21C 0 ABS 1 - adc.obj
+_PHA5 21D 0 ABS 1 - adc.obj
+_PHA6 21E 0 ABS 1 - adc.obj
+_PHA7 21F 0 ABS 1 - adc.obj
+_PWMM 2A8 0 ABS 1 - adc.obj
+_T0CK 25F 0 ABS 1 - adc.obj
+_T0CS 20D 0 ABS 1 - adc.obj
+_T0SE 20C 0 ABS 1 - adc.obj
+_T1EN 267 0 ABS 1 - adc.obj
+_T1IE 259 0 ABS 1 - adc.obj
+_T1IF 258 0 ABS 1 - adc.obj
+_T2EN 287 0 ABS 1 - adc.obj
+_T2IE 25E 0 ABS 1 - adc.obj
+_T2IF 25D 0 ABS 1 - adc.obj
+_VHS0 2D9 0 ABS 1 - adc.obj
+_VHS1 2DA 0 ABS 1 - adc.obj
+_VHS2 2DB 0 ABS 1 - adc.obj
+___sp 0 0 STACK 2 stack startup.obj
+_main 38E 0 CODE 0 maintext adc.obj
+btemp 3E 0 ABS 0 - adc.obj
+__HbssBANK1l 0 0 ABS 0 bssBANK1l -
+__size_of_Eve_Detect 0 0 ABS 0 - adc.obj
+start 2A 0 CODE 0 init startup.obj
+__size_of_main 0 0 ABS 0 - adc.obj
+_T1CR_AUXR 4B 0 ABS 1 - adc.obj
+__end_of_LED_PWM_Set 54C 0 CODE 0 text23 adc.obj
+_Battery_Init_Data 360 0 CODE 0 text41 adc.obj
+__size_of_ChargeDetect_Interrupt_Open 0 0 ABS 0 - adc.obj
+_Key_Interrupt_Open 5FE 0 CODE 0 text15 adc.obj
+_ChargeTick_Ctrl 5B8 0 CODE 0 text48 adc.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_TickTimer_Open 5DA 0 CODE 0 text9 adc.obj
+__size_of_LED_Dim 0 0 ABS 0 - adc.obj
+__size_of_Tick_Timer_Init 0 0 ABS 0 - adc.obj
+LED_Status@pwm 35 0 BANK0 1 cstackBANK0 adc.obj
+_LED_Status 40C 0 CODE 0 text22 adc.obj
+__LbssBANK1l 0 0 ABS 0 bssBANK1l -
+Battery_Init_Data@BatteryLowCnt 38 0 BANK0 1 cstackBANK0 adc.obj
+_Read_Key 30 0 CODE 0 text29 adc.obj
+__size_of_Battery_Manage 0 0 ABS 0 - adc.obj
+intlevel0 0 0 ENTRY 0 functab startup.obj
+intlevel1 0 0 ENTRY 0 functab startup.obj
+intlevel2 0 0 ENTRY 0 functab startup.obj
+intlevel3 0 0 ENTRY 0 functab startup.obj
+intlevel4 0 0 ENTRY 0 functab startup.obj
+intlevel5 0 0 ENTRY 0 functab startup.obj
+__size_of_Eve_Manage 0 0 ABS 0 - adc.obj
+__end_of_Key_Interrupt_Close 5F8 0 CODE 0 text10 adc.obj
+wtemp0 3E 0 ABS 0 - adc.obj
+__end_of_ChargeDetect_Interrupt_Open 60A 0 CODE 0 text16 adc.obj
+_Get_Lvdf 568 0 CODE 0 text43 adc.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+_led_Init 188 0 CODE 0 text3 adc.obj
+__end_of_sysinitial 5CA 0 CODE 0 text1 adc.obj
+_KeyShortPressTwiceFlag 18D -157 BANK0 1 bitbssBANK0 adc.obj
+__end_of_Read_Key 116 0 CODE 0 text29 adc.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_Get_Lvdf 576 0 CODE 0 text43 adc.obj
+__end_of_led_Init 1F4 0 CODE 0 text3 adc.obj
+__end_of_LED_Manage 5EA 0 CODE 0 text21 adc.obj
+__end_of_DelayMs 4DC 0 CODE 0 text44 adc.obj
+_ADCON0 5A 0 ABS 1 - adc.obj
+_ADCON1 5B 0 ABS 1 - adc.obj
+_ADRESH 59 0 ABS 1 - adc.obj
+_ADRESL 58 0 ABS 1 - adc.obj
+_ANSEL0 2B0 0 ABS 1 - adc.obj
+_ANSEL1 2B1 0 ABS 1 - adc.obj
+_ANSEL2 2B2 0 ABS 1 - adc.obj
+_ANSEL3 2B3 0 ABS 1 - adc.obj
+_ANSEL4 2B4 0 ABS 1 - adc.obj
+_ANSEL5 2B5 0 ABS 1 - adc.obj
+_ANSEL6 2B6 0 ABS 1 - adc.obj
+_ANSEL7 2B7 0 ABS 1 - adc.obj
+_ANSEL8 2B8 0 ABS 1 - adc.obj
+_ANSEL9 2B9 0 ABS 1 - adc.obj
+_ANSELH 57 0 ABS 1 - adc.obj
+_ANSELL 56 0 ABS 1 - adc.obj
+_SleepSig 188 -157 BANK0 1 bitbssBANK0 adc.obj
+Read_Key@interval_1713 39 0 BANK0 1 cstackBANK0 adc.obj
+__end_of_DelayUs2x 5F2 0 CODE 0 text45 adc.obj
+_BatteryFullJudgTick 26 0 BANK0 1 bssBANK0 adc.obj
+__size_of_DelayUs2x 0 0 ABS 0 - adc.obj
+__Hpa_nodes0 0 0 ABS 0 pa_nodes0 -
+_Sleep_Manage 4FA 0 CODE 0 text7 adc.obj
+__end_of_Battery_StatusJudg 188 0 CODE 0 text36 adc.obj
+Timer2_Isr@timer_1ms 1E 0 BANK0 1 bssBANK0 adc.obj
+_BatteryFullCnt1 25 0 BANK0 1 bssBANK0 adc.obj
+_BatteryFullCnt2 24 0 BANK0 1 bssBANK0 adc.obj
+_BatteryFullFlag 190 -157 BANK0 1 bitbssBANK0 adc.obj
+__Lmaintext 0 0 ABS 0 maintext -
+_BatteryLvdCnt1 2A 0 BANK0 1 bssBANK0 adc.obj
+_BatteryLvdCnt2 29 0 BANK0 1 bssBANK0 adc.obj
+_BatteryLvdTick 2B 0 BANK0 1 bssBANK0 adc.obj
+_EveDim 18B -157 BANK0 1 bitbssBANK0 adc.obj
+__end_of_LED_Color 2C6 0 CODE 0 text26 adc.obj
+_MTP_CLEN 201 0 ABS 1 - adc.obj
+__end_of_LED_Status 430 0 CODE 0 text22 adc.obj
+_DelayUs2x 5EA 0 CODE 0 text45 adc.obj
+__size_of_LED_Color 0 0 ABS 0 - adc.obj
+_BatteryDieCntSec 27 0 BANK0 1 bssBANK0 adc.obj
+_Battery_Init 618 0 CODE 0 text40 adc.obj
+_INTEDG 20E 0 ABS 1 - adc.obj
+_EveColor 18A -157 BANK0 1 bitbssBANK0 adc.obj
+_EvePower 18C -157 BANK0 1 bitbssBANK0 adc.obj
+__size_of_ChargeTick_Ctrl 0 0 ABS 0 - adc.obj
+__Lpa_nodes0 0 0 ABS 0 pa_nodes0 -
+_BatteryTick_Ctrl 454 0 CODE 0 text49 adc.obj
+__end_of_LED_Dim 52A 0 CODE 0 text24 adc.obj
+__size_of_key_Init 0 0 ABS 0 - adc.obj
+_LED_Color 28A 0 CODE 0 text26 adc.obj
+_Battery_StatusJudg 116 0 CODE 0 text36 adc.obj
+_Charge_Config 60A 0 CODE 0 text33 adc.obj
+_Sleep_Wakeup 59A 0 CODE 0 text8 adc.obj
+__end_of_inital 4FA 0 CODE 0 text5 adc.obj
+start_initialization 2C 0 CODE 0 cinit adc.obj
+__size_of_Sleep_Manage 0 0 ABS 0 - adc.obj
+_Charge_Detect 32E 0 CODE 0 text32 adc.obj
+_Charge_Init 55A 0 CODE 0 text34 adc.obj
+_OPTION 41 0 ABS 1 - adc.obj
+_PDCON1 42 0 ABS 1 - adc.obj
+_PHCON1 43 0 ABS 1 - adc.obj
+_PMADRH 48 0 ABS 1 - adc.obj
+_PMADRL 47 0 ABS 1 - adc.obj
+_PMDATH 4A 0 ABS 1 - adc.obj
+_PMDATL 49 0 ABS 1 - adc.obj
+_PWM1_8 288 0 ABS 1 - adc.obj
+_PWM1_9 289 0 ABS 1 - adc.obj
+_PWMSET 55 0 ABS 1 - adc.obj
+_Power_Manage 61C 0 CODE 0 text18 adc.obj
+__size_of_LED_PWM_Set 0 0 ABS 0 - adc.obj
+__pcstackBANK0 33 0 BANK0 1 cstackBANK0 adc.obj
+_T1LOAD 4E 0 ABS 1 - adc.obj
+_T2LOAD 53 0 ABS 1 - adc.obj
+__size_of_Battery_Init 0 0 ABS 0 - adc.obj
+Read_Key@sys_time 35 0 BANK0 1 cstackBANK0 adc.obj
+_PowerStatus 194 -157 BANK0 1 bitbssBANK0 adc.obj
+_TIMER2_8 28C 0 ABS 1 - adc.obj
+_TIMER2_9 28D 0 ABS 1 - adc.obj
+__size_of_ramInitial 0 0 ABS 0 - adc.obj
+_TRISA0 228 0 ABS 1 - adc.obj
+_TRISA1 229 0 ABS 1 - adc.obj
+_TRISA2 22A 0 ABS 1 - adc.obj
+_TRISA3 22B 0 ABS 1 - adc.obj
+_TRISA4 22C 0 ABS 1 - adc.obj
+_TRISA5 22D 0 ABS 1 - adc.obj
+_TRISA6 22E 0 ABS 1 - adc.obj
+_TRISA7 22F 0 ABS 1 - adc.obj
+_TRISB0 230 0 ABS 1 - adc.obj
+_TRISB1 231 0 ABS 1 - adc.obj
+_TRISB2 232 0 ABS 1 - adc.obj
+_TRISB3 233 0 ABS 1 - adc.obj
+_TRISB4 234 0 ABS 1 - adc.obj
+_TRISB5 235 0 ABS 1 - adc.obj
+_TRISB6 236 0 ABS 1 - adc.obj
+_TRISB7 237 0 ABS 1 - adc.obj
+Battery_Init_Data@i 39 0 BANK0 1 cstackBANK0 adc.obj
+__end_of_Sleep_Manage 512 0 CODE 0 text7 adc.obj
+_Charge_Manage 61E 0 CODE 0 text31 adc.obj
+___int_sp 0 0 STACK 2 stack startup.obj
+_PowerOffPrepareToSleepTick CE 0 BANK1 1 bssBANK1l adc.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hcinit 30 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__size_of_Sleep_Wakeup 0 0 ABS 0 - adc.obj
+__Hstack 0 0 STACK 2 stack -
+LED_Color@index 35 0 BANK0 1 cstackBANK0 adc.obj
+__Hmaintext 0 0 ABS 0 maintext -
+_key_Init 5CA 0 CODE 0 text4 adc.obj
+__end_of_Battery_Init 61C 0 CODE 0 text40 adc.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 0 0 CONFIG 0 config -
+_OCCUPY0BE BE 0 ABS 1 - adc.obj
+_OCCUPY0BF BF 0 ABS 1 - adc.obj
+_Key_Detect 3BA 0 CODE 0 text28 adc.obj
+_ANSEL10 2BA 0 ABS 1 - adc.obj
+_ANSEL11 2BB 0 ABS 1 - adc.obj
+_ANSEL14 2BE 0 ABS 1 - adc.obj
+_ANSEL15 2BF 0 ABS 1 - adc.obj
+_Power_Init 610 0 CODE 0 text20 adc.obj
+__size_of_Power_Manage 0 0 ABS 0 - adc.obj
+_Power_Turn 582 0 CODE 0 text19 adc.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lcinit 2C 0 CODE 0 cinit -
+_T2LOAD_8 28A 0 ABS 1 - adc.obj
+_T2LOAD_9 28B 0 ABS 1 - adc.obj
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__end_of_key_Init 5D2 0 CODE 0 text4 adc.obj
+__size_of_Key_Interrupt_Open 0 0 ABS 0 - adc.obj
+_RD_FLAG 200 0 ABS 1 - adc.obj
+__size_of_sysinitial 0 0 ABS 0 - adc.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 2A 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 2A 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Ltext 0 0 ABS 0 text -
+__end_of_BatteryTick_Ctrl 478 0 CODE 0 text49 adc.obj
+__end_of_Sleep_Wakeup 5A4 0 CODE 0 text8 adc.obj
+__size_of_Battery_LvdDetect 0 0 ABS 0 - adc.obj
+_SleepTick_Ctlr 2FA 0 CODE 0 text47 adc.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_LED_DimIndex_Ctrl 0 0 ABS 0 - adc.obj
+_SetLVD_Level 430 0 CODE 0 text37 adc.obj
+_BOR 25B 0 ABS 1 - adc.obj
+_FSR 4 0 ABS 0 - adc.obj
+_GIE 77 0 ABS 0 - adc.obj
+_POR 25C 0 ABS 1 - adc.obj
+_PS0 208 0 ABS 1 - adc.obj
+_PS1 209 0 ABS 1 - adc.obj
+_PS2 20A 0 ABS 1 - adc.obj
+_PSA 20B 0 ABS 1 - adc.obj
+_SCS 285 0 ABS 1 - adc.obj
+__S0 310 0 ABS 0 - -
+__S1 D2 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__pbitbssBANK0 188 -157 BANK0 1 bitbssBANK0 adc.obj
+_ChargeStatus 193 -157 BANK0 1 bitbssBANK0 adc.obj
+_Sleep_Init 5A4 0 CODE 0 text13 adc.obj
+_Sleep_Jump 54C 0 CODE 0 text12 adc.obj
+DelayMs@t 36 0 BANK0 1 cstackBANK0 adc.obj
+__size_of_BatteryTick_Ctrl 0 0 ABS 0 - adc.obj
+__end_of_Power_Manage 61E 0 CODE 0 text18 adc.obj
+__size_of_LED_Manage 0 0 ABS 0 - adc.obj
+__size_of_Charge_Config 0 0 ABS 0 - adc.obj
+saved_w 3E 0 ABS 0 - adc.obj
+__size_of_Charge_Detect 0 0 ABS 0 - adc.obj
+_BatteryDieCntFinishFlag 191 -157 BANK0 1 bitbssBANK0 adc.obj
+_Timer2_Isr 246 0 CODE 0 text46 adc.obj
+__size_of_TickTimer_Open 0 0 ABS 0 - adc.obj
+_DelayMs 4BC 0 CODE 0 text44 adc.obj
+__Lintentry 10 0 CODE 0 intentry -
+__size_of_LED_Status 0 0 ABS 0 - adc.obj
+reset_vec 8 0 CODE 0 reset_vec startup.obj
+__end_of_Key_Detect 3E4 0 CODE 0 text28 adc.obj
+_inital 4DC 0 CODE 0 text5 adc.obj
+__end_of_Power_Init 614 0 CODE 0 text20 adc.obj
+__end_of_Power_Turn 58E 0 CODE 0 text19 adc.obj
+_ChargeDetect_Interrupt_Close 5F8 0 CODE 0 text11 adc.obj
+__end_of_TickTimer_Close 5E2 0 CODE 0 text14 adc.obj
+__size_of_SetLVD_Level 0 0 ABS 0 - adc.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_Battery_Manage 52A 0 CODE 0 text35 adc.obj
+_LastShortPressTime 16 0 BANK0 1 bssBANK0 adc.obj
+__end_of_Charge_Config 610 0 CODE 0 text33 adc.obj
+__size_of_Battery_Full_Judg 0 0 ABS 0 - adc.obj
+_ChargeDetect_Interrupt_Open 604 0 CODE 0 text16 adc.obj
+__end_of_SleepTick_Ctlr 32E 0 CODE 0 text47 adc.obj
+__end_of_Charge_Detect 360 0 CODE 0 text32 adc.obj
+__size_of_Charge_Manage 0 0 ABS 0 - adc.obj
+__LbitbssBANK0 0 0 ABS 0 bitbssBANK0 -
+_LED_W_DimArray C7 0 BANK1 1 bssBANK1l adc.obj
+__size_of_Lvd_Init 0 0 ABS 0 - adc.obj
+_LED_W_DimIndex 1B 0 BANK0 1 bssBANK0 adc.obj
+__ptext10 5F2 0 CODE 0 text10 adc.obj
+__ptext11 5F8 0 CODE 0 text11 adc.obj
+__ptext12 54C 0 CODE 0 text12 adc.obj
+__ptext13 5A4 0 CODE 0 text13 adc.obj
+__ptext14 5DA 0 CODE 0 text14 adc.obj
+__ptext15 5FE 0 CODE 0 text15 adc.obj
+__ptext16 604 0 CODE 0 text16 adc.obj
+__ptext17 5AE 0 CODE 0 text17 adc.obj
+__ptext18 61C 0 CODE 0 text18 adc.obj
+__ptext19 582 0 CODE 0 text19 adc.obj
+__ptext20 610 0 CODE 0 text20 adc.obj
+__ptext21 5E2 0 CODE 0 text21 adc.obj
+__ptext22 40C 0 CODE 0 text22 adc.obj
+__ptext23 53C 0 CODE 0 text23 adc.obj
+__ptext24 512 0 CODE 0 text24 adc.obj
+__ptext25 49A 0 CODE 0 text25 adc.obj
+__ptext26 28A 0 CODE 0 text26 adc.obj
+__ptext27 614 0 CODE 0 text27 adc.obj
+__ptext28 3BA 0 CODE 0 text28 adc.obj
+__ptext29 30 0 CODE 0 text29 adc.obj
+__ptext30 1F4 0 CODE 0 text30 adc.obj
+__ptext31 61E 0 CODE 0 text31 adc.obj
+__ptext32 32E 0 CODE 0 text32 adc.obj
+__ptext33 60A 0 CODE 0 text33 adc.obj
+__ptext34 55A 0 CODE 0 text34 adc.obj
+__ptext35 52A 0 CODE 0 text35 adc.obj
+__ptext36 116 0 CODE 0 text36 adc.obj
+__ptext37 430 0 CODE 0 text37 adc.obj
+__ptext38 3E4 0 CODE 0 text38 adc.obj
+__ptext39 2C6 0 CODE 0 text39 adc.obj
+__ptext40 618 0 CODE 0 text40 adc.obj
+__ptext41 360 0 CODE 0 text41 adc.obj
+__ptext42 58E 0 CODE 0 text42 adc.obj
+__ptext43 568 0 CODE 0 text43 adc.obj
+__ptext44 4BC 0 CODE 0 text44 adc.obj
+__ptext45 5EA 0 CODE 0 text45 adc.obj
+__ptext46 246 0 CODE 0 text46 adc.obj
+__ptext47 2FA 0 CODE 0 text47 adc.obj
+__ptext48 5B8 0 CODE 0 text48 adc.obj
+__ptext49 454 0 CODE 0 text49 adc.obj
+_LedColor 1C 0 BANK0 1 bssBANK0 adc.obj
+_Eve_Detect 1F4 0 CODE 0 text30 adc.obj
+__pmaintext 38E 0 CODE 0 maintext adc.obj
+__end_of_Sleep_Init 5AE 0 CODE 0 text13 adc.obj
+__end_of_Sleep_Jump 55A 0 CODE 0 text12 adc.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 0 config -
+_LED_Y_DimArray C0 0 BANK1 1 bssBANK1l adc.obj
+_LED_Y_DimIndex 1A 0 BANK0 1 bssBANK0 adc.obj
+__end_of_SetLVD_Level 454 0 CODE 0 text37 adc.obj
+_BatteryStatus 30 0 BANK0 1 bssBANK0 adc.obj
+_LED_Dim 512 0 CODE 0 text24 adc.obj
+_LED_PWM D0 0 BANK1 1 bssBANK1l adc.obj
+_KeyTick 1F 0 BANK0 1 bssBANK0 adc.obj
+__end_of_Timer2_Isr 28A 0 CODE 0 text46 adc.obj
+__size_of_Battery_Init_Data 0 0 ABS 0 - adc.obj
+__size_of_Battery_StatusJudg 0 0 ABS 0 - adc.obj
+__size_of_inital 0 0 ABS 0 - adc.obj
+__end_of_Charge_Manage 620 0 CODE 0 text31 adc.obj
+_LED_PWM_Set 53C 0 CODE 0 text23 adc.obj
+stackhi 0 0 ABS 0 - startup.obj
+stacklo 0 0 ABS 0 - startup.obj
+__pbssBANK1l C0 0 BANK1 1 bssBANK1l adc.obj
+_TickTimer_Close 5DA 0 CODE 0 text14 adc.obj
+_KeyShortPressFlag 18F -157 BANK0 1 bitbssBANK0 adc.obj
+_Eve_Manage 614 0 CODE 0 text27 adc.obj
+__end_of_Battery_Manage 53C 0 CODE 0 text35 adc.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__end_of_Battery_LvdDetect 40C 0 CODE 0 text38 adc.obj
+__size_of_RGB_Init 0 0 ABS 0 - adc.obj
+__end_of_LED_DimIndex_Ctrl 4BC 0 CODE 0 text25 adc.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 2A 0 CODE 0 end_init -
+__end_of_Charge_Init 568 0 CODE 0 text34 adc.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 2C 0 CODE 0 cinit adc.obj
+_Lvd_Init 58E 0 CODE 0 text42 adc.obj
+__Hintentry 2A 0 CODE 0 intentry -
+_BatteryLvdStatus 192 -157 BANK0 1 bitbssBANK0 adc.obj
+_KeyLongPressFlag 18E -157 BANK0 1 bitbssBANK0 adc.obj
+__Lstrings 0 0 ABS 0 strings -
+__end_of_Eve_Detect 246 0 CODE 0 text30 adc.obj
+__Hreset_vec A 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_Lvd_Init 59A 0 CODE 0 text42 adc.obj
+__ptext0 0 0 CODE 0 text0 adc.obj
+__ptext1 5C2 0 CODE 0 text1 adc.obj
+__ptext2 478 0 CODE 0 text2 adc.obj
+__ptext3 188 0 CODE 0 text3 adc.obj
+__ptext4 5CA 0 CODE 0 text4 adc.obj
+__ptext5 4DC 0 CODE 0 text5 adc.obj
+__ptext6 576 0 CODE 0 text6 adc.obj
+__ptext7 4FA 0 CODE 0 text7 adc.obj
+__ptext8 59A 0 CODE 0 text8 adc.obj
+__ptext9 5D2 0 CODE 0 text9 adc.obj
+_BatteryStatusCnt1 2E 0 BANK0 1 bssBANK0 adc.obj
+_BatteryStatusCnt2 2D 0 BANK0 1 bssBANK0 adc.obj
+_BatteryStatusCnt3 2C 0 BANK0 1 bssBANK0 adc.obj
+_BatteryStatusTick 2F 0 BANK0 1 bssBANK0 adc.obj
+DelayUs2x@t 35 0 BANK0 1 cstackBANK0 adc.obj
+Get_Lvdf@result 35 0 BANK0 1 cstackBANK0 adc.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_KeyPressTime 18 0 BANK0 1 bssBANK0 adc.obj
+__end_of_Tick_Timer_Init 582 0 CODE 0 text6 adc.obj
+__Lreset_vec 8 0 CODE 0 reset_vec -
+__end_of_Battery_Full_Judg 2FA 0 CODE 0 text39 adc.obj
+_RGB_Init 5AE 0 CODE 0 text17 adc.obj
+__end_of_Eve_Manage 618 0 CODE 0 text27 adc.obj
+SetLVD_Level@level 35 0 BANK0 1 cstackBANK0 adc.obj
+__size_of_Key_Interrupt_Close 0 0 ABS 0 - adc.obj
+_ShortIndex 20 0 BANK0 1 bssBANK0 adc.obj
+__HbitbssBANK0 0 0 ABS 0 bitbssBANK0 -
+Read_Key@interval 37 0 BANK0 1 cstackBANK0 adc.obj
+__end_of__initialization 2C 0 CODE 0 cinit adc.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_RGB_Init 5B8 0 CODE 0 text17 adc.obj
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_ChargeDetect_Interrupt_Close 0 0 ABS 0 - adc.obj
+_T0OSCEN 265 0 ABS 1 - adc.obj
+__size_of_Key_Detect 0 0 ABS 0 - adc.obj
+__size_of_TickTimer_Close 0 0 ABS 0 - adc.obj
+__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON adc.obj
+__size_of_Power_Init 0 0 ABS 0 - adc.obj
+__size_of_Power_Turn 0 0 ABS 0 - adc.obj
+_LED_ColorPwm 12 0 BANK0 1 bssBANK0 adc.obj
+_Battery_LvdDetect 3E4 0 CODE 0 text38 adc.obj
+__end_of_ChargeDetect_Interrupt_Close 5FE 0 CODE 0 text11 adc.obj
+__end_of_Battery_Init_Data 38E 0 CODE 0 text41 adc.obj
+_LED_DimIndex_Ctrl 49A 0 CODE 0 text25 adc.obj
+__Hend_init 2C 0 CODE 0 end_init -
+__end_of_main 3BA 0 CODE 0 maintext adc.obj
+_ADCS0 2DC 0 ABS 1 - adc.obj
+_ADCS1 2DD 0 ABS 1 - adc.obj
+_ADCS2 2DE 0 ABS 1 - adc.obj
+_ADREF 2D8 0 ABS 1 - adc.obj
+_BOREN 25A 0 ABS 1 - adc.obj
+_ShortPressCount 1D 0 BANK0 1 bssBANK0 adc.obj
+_IOCB2 4A 0 ABS 0 - adc.obj
+_IOCB6 4E 0 ABS 0 - adc.obj
+_LVDCR 8 0 ABS 0 - adc.obj
+_PDCON B 0 ABS 0 - adc.obj
+_PHCON D 0 ABS 0 - adc.obj
+_PMCON 40 0 ABS 1 - adc.obj
+_PORTA 5 0 ABS 0 - adc.obj
+_PORTB 6 0 ABS 0 - adc.obj
+_PWM0E 266 0 ABS 1 - adc.obj
+_PWM0P 4F 0 ABS 1 - adc.obj
+_PWM1E 286 0 ABS 1 - adc.obj
+_PWM1P 54 0 ABS 1 - adc.obj
+_PWMS0 28E 0 ABS 1 - adc.obj
+_PWMS1 28F 0 ABS 1 - adc.obj
+_T1CK0 263 0 ABS 1 - adc.obj
+_T1CK1 264 0 ABS 1 - adc.obj
+_T1CON 4C 0 ABS 1 - adc.obj
+_T1PR0 260 0 ABS 1 - adc.obj
+_T1PR1 261 0 ABS 1 - adc.obj
+_T1PR2 262 0 ABS 1 - adc.obj
+_T2CK0 283 0 ABS 1 - adc.obj
+_T2CK1 284 0 ABS 1 - adc.obj
+_T2CON 50 0 ABS 1 - adc.obj
+_T2PR0 280 0 ABS 1 - adc.obj
+_T2PR1 281 0 ABS 1 - adc.obj
+_T2PR2 282 0 ABS 1 - adc.obj
+_TMR2H 51 0 ABS 1 - adc.obj
+_TRISA 45 0 ABS 1 - adc.obj
+_TRISB 46 0 ABS 1 - adc.obj
+_WDTEN 20F 0 ABS 1 - adc.obj
+_ramInitial 478 0 CODE 0 text2 adc.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 10 0 CODE 0 intentry adc.obj
+_Tick_Timer_Init 576 0 CODE 0 text6 adc.obj
+__size_of_Sleep_Init 0 0 ABS 0 - adc.obj
+__size_of_Sleep_Jump 0 0 ABS 0 - adc.obj
+__pintentry 10 0 CODE 0 intentry adc.obj
+_Key_Interrupt_Close 5F2 0 CODE 0 text10 adc.obj
+__initialization 2C 0 CODE 0 cinit adc.obj
+__pbssBANK0 10 0 BANK0 1 bssBANK0 adc.obj
+__size_of_Timer2_Isr 0 0 ABS 0 - adc.obj
+_LED_DimPwm 10 0 BANK0 1 bssBANK0 adc.obj
+__end_of_ChargeTick_Ctrl 5C2 0 CODE 0 text48 adc.obj
+_ChargeDetectTick 21 0 BANK0 1 bssBANK0 adc.obj
+__size_of_Charge_Init 0 0 ABS 0 - adc.obj
+_TickTimer_Open 5D2 0 CODE 0 text9 adc.obj
+_LastLongKeyFlag 189 -157 BANK0 1 bitbssBANK0 adc.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+_T1 1 4D 1
+_T2 1 52 1
+_ADEN 1 2D0 0
+_ADON 1 2D1 0
+_CHS0 1 2D2 0
+_CHS1 1 2D3 0
+_CHS2 1 2D4 0
+_CHS3 1 2D5 0
+_PDA0 1 210 0
+_PDA1 1 211 0
+_PDA2 1 212 0
+_PDA3 1 213 0
+_PDA4 1 214 0
+_PDA5 1 215 0
+_PDA6 1 216 0
+_PDA7 1 217 0
+_PHA0 1 218 0
+_PHA1 1 219 0
+_PHA2 1 21A 0
+_PHA3 1 21B 0
+_PHA4 1 21C 0
+_PHA5 1 21D 0
+_PHA6 1 21E 0
+_PHA7 1 21F 0
+_PWMM 1 2A8 0
+_T0CK 1 25F 0
+_T0CS 1 20D 0
+_T0SE 1 20C 0
+_T1EN 1 267 0
+_T1IE 1 259 0
+_T1IF 1 258 0
+_T2EN 1 287 0
+_T2IE 1 25E 0
+_T2IF 1 25D 0
+_VHS0 1 2D9 0
+_VHS1 1 2DA 0
+_VHS2 1 2DB 0
+_T1CR_AUXR 1 4B 1
+_ADCON0 1 5A 1
+_ADCON1 1 5B 1
+_ADRESH 1 59 1
+_ADRESL 1 58 1
+_ANSEL0 1 2B0 0
+_ANSEL1 1 2B1 0
+_ANSEL2 1 2B2 0
+_ANSEL3 1 2B3 0
+_ANSEL4 1 2B4 0
+_ANSEL5 1 2B5 0
+_ANSEL6 1 2B6 0
+_ANSEL7 1 2B7 0
+_ANSEL8 1 2B8 0
+_ANSEL9 1 2B9 0
+_ANSELH 1 57 1
+_ANSELL 1 56 1
+_MTP_CLEN 1 201 0
+_INTEDG 1 20E 0
+_OPTION 1 41 1
+_PDCON1 1 42 1
+_PHCON1 1 43 1
+_PMADRH 1 48 1
+_PMADRL 1 47 1
+_PMDATH 1 4A 1
+_PMDATL 1 49 1
+_PWM1_8 1 288 0
+_PWM1_9 1 289 0
+_PWMSET 1 55 1
+_T1LOAD 1 4E 1
+_T2LOAD 1 53 1
+_TIMER2_8 1 28C 0
+_TIMER2_9 1 28D 0
+_TRISA0 1 228 0
+_TRISA1 1 229 0
+_TRISA2 1 22A 0
+_TRISA3 1 22B 0
+_TRISA4 1 22C 0
+_TRISA5 1 22D 0
+_TRISA6 1 22E 0
+_TRISA7 1 22F 0
+_TRISB0 1 230 0
+_TRISB1 1 231 0
+_TRISB2 1 232 0
+_TRISB3 1 233 0
+_TRISB4 1 234 0
+_TRISB5 1 235 0
+_TRISB6 1 236 0
+_TRISB7 1 237 0
+_OCCUPY0BE 1 BE 1
+_OCCUPY0BF 1 BF 1
+_ANSEL10 1 2BA 0
+_ANSEL11 1 2BB 0
+_ANSEL14 1 2BE 0
+_ANSEL15 1 2BF 0
+_T2LOAD_8 1 28A 0
+_T2LOAD_9 1 28B 0
+_RD_FLAG 1 200 0
+_BOR 1 25B 0
+_POR 1 25C 0
+_PS0 1 208 0
+_PS1 1 209 0
+_PS2 1 20A 0
+_PSA 1 20B 0
+_SCS 1 285 0
+_T0OSCEN 1 265 0
+_ADCS0 1 2DC 0
+_ADCS1 1 2DD 0
+_ADCS2 1 2DE 0
+_ADREF 1 2D8 0
+_BOREN 1 25A 0
+_PMCON 1 40 1
+_PWM0E 1 266 0
+_PWM0P 1 4F 1
+_PWM1E 1 286 0
+_PWM1P 1 54 1
+_PWMS0 1 28E 0
+_PWMS1 1 28F 0
+_T1CK0 1 263 0
+_T1CK1 1 264 0
+_T1CON 1 4C 1
+_T1PR0 1 260 0
+_T1PR1 1 261 0
+_T1PR2 1 262 0
+_T2CK0 1 283 0
+_T2CK1 1 284 0
+_T2CON 1 50 1
+_T2PR0 1 280 0
+_T2PR1 1 281 0
+_T2PR2 1 282 0
+_TMR2H 1 51 1
+_TRISA 1 45 1
+_TRISB 1 46 1
+_WDTEN 1 20F 0
+- 1 5B 1
+- 1 5B 1
+- 1 5B 1
+- 1 5B 1
+- 1 5B 1
+- 1 5B 1
+- 1 5B 1
+- 1 5A 1
+- 1 5A 1
+- 1 5A 1
+- 1 5A 1
+- 1 5A 1
+- 1 5A 1
+- 1 57 1
+- 1 57 1
+- 1 57 1
+- 1 57 1
+- 1 57 1
+- 1 57 1
+- 1 56 1
+- 1 56 1
+- 1 56 1
+- 1 56 1
+- 1 56 1
+- 1 56 1
+- 1 56 1
+- 1 56 1
+- 1 55 1
+- 1 51 1
+- 1 51 1
+- 1 51 1
+- 1 51 1
+- 1 51 1
+- 1 51 1
+- 1 51 1
+- 1 51 1
+- 1 50 1
+- 1 50 1
+- 1 50 1
+- 1 50 1
+- 1 50 1
+- 1 50 1
+- 1 50 1
+- 1 50 1
+- 1 4C 1
+- 1 4C 1
+- 1 4C 1
+- 1 4C 1
+- 1 4C 1
+- 1 4C 1
+- 1 4C 1
+- 1 4C 1
+- 1 4B 1
+- 1 4B 1
+- 1 4B 1
+- 1 4B 1
+- 1 4B 1
+- 1 4B 1
+- 1 4B 1
+- 1 4B 1
+- 1 46 1
+- 1 46 1
+- 1 46 1
+- 1 46 1
+- 1 46 1
+- 1 46 1
+- 1 46 1
+- 1 46 1
+- 1 45 1
+- 1 45 1
+- 1 45 1
+- 1 45 1
+- 1 45 1
+- 1 45 1
+- 1 45 1
+- 1 45 1
+- 1 43 1
+- 1 43 1
+- 1 43 1
+- 1 43 1
+- 1 43 1
+- 1 43 1
+- 1 43 1
+- 1 43 1
+- 1 42 1
+- 1 42 1
+- 1 42 1
+- 1 42 1
+- 1 42 1
+- 1 42 1
+- 1 42 1
+- 1 42 1
+- 1 41 1
+- 1 41 1
+- 1 41 1
+- 1 41 1
+- 1 41 1
+- 1 41 1
+- 1 41 1
+- 1 41 1
+- 1 40 1
+- 1 40 1
+- 1 3E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intentry 0 8 10 308 2
+reset_vec 0 4 8 1 2
+bssBANK0 1 10 10 2B 1
+bssBANK1l 1 C0 C0 12 1

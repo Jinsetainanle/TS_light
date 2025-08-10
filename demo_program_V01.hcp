@@ -1,0 +1,94 @@
+[HC-IDE]
+Version=3.0.11.S
+[File Count]
+Count=26
+[MCU]
+PowerSupply=2
+[Settings]
+Device=HC18M121B1
+ConfigBitValue0=11385
+ConfigBitValue1=4037
+ConfigBitValue2=0
+Output=.
+PostBuild=0
+PostBuildCommand=
+Library=
+ConfigBitValue3=240
+ConfigBitValue4=16375
+ConfigCount=2
+ConfigAddress0=8192
+ConfigAddress1=8194
+init=0
+clear=0
+[Files]
+OpenFileCounts=26
+File0=main.c|3 0 998 0 308
+File1=led.c|1 156 654 156 636
+File2=power.c|1 234 1694 234 723
+File3=sleep.c|1 52 1457 52 541
+File4=rgb.c|1 182 1587 182 671
+File5=battery.c|1 0 1460 0 489
+File6=adc.c|1 25 1027 25 337
+File7=rgb.h|1 234 1639 234 723
+File8=charge.h|1 78 1538 78 567
+File9=battery.h|1 26 1486 26 515
+File10=ADC.H|1 100 1102 100 412
+File11=interrupt.c|1 52 1512 52 541
+File12=KEY.h|1 208 1668 208 697
+File13=led.h|1 130 628 130 610
+File14=sleep.h|1 78 1483 78 567
+File15=driver.h|1 182 1642 182 671
+File16=driver.c|1 130 1590 130 619
+File17=charge.c|1 26 1486 26 515
+File18=key.c|1 156 1616 156 645
+File19=power.h|1 26 1486 26 515
+File20=interrupt.h|1 26 1486 26 515
+File21=inital.h|1 75 1077 75 387
+File22=eve.h|1 0 1460 0 489
+File23=eve.c|1 26 1486 26 515
+File24=inital.c|1 25 1027 25 337
+File25=HOLYCHIP_DEFINE.H|1 100 1102 100 412
+[Break]
+Count=0
+BP0=5 62 1
+BP1=0 150 1
+BP2=0 164 1
+[Watch0]
+Count=6
+Watch0=0x0031 0
+Watch1=0x0031 0
+Watch2=0x0022 0
+Watch3=0x0020 0
+Watch4=0x001E 0
+Watch5=0x0017 0
+[Watch1]
+Count=0
+[Watch2]
+Count=0
+[Project Files]
+File0=adc.c
+File1=ADC.H
+File2=battery.c
+File3=battery.h
+File4=charge.c
+File5=charge.h
+File6=driver.c
+File7=driver.h
+File8=eve.c
+File9=eve.h
+File10=HOLYCHIP_DEFINE.H
+File11=inital.c
+File12=inital.h
+File13=interrupt.c
+File14=interrupt.h
+File15=key.c
+File16=KEY.h
+File17=led.c
+File18=led.h
+File19=main.c
+File20=power.c
+File21=power.h
+File22=rgb.c
+File23=rgb.h
+File24=sleep.c
+File25=sleep.h

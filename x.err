@@ -1,0 +1,15 @@
+battery.c: 119: (766) degenerate signed comparison (warning)
+battery.c: 119: (764) mismatched comparison (warning)
+rgb.c: 7: (1090) variable "_RgbEffectTick" is not used (warning)
+rgb.c: 5: (1090) variable "_RgbEffect" is not used (warning)
+battery.c: 20: (1090) variable "_BatteryDieTick" is not used (warning)
+rgb.c: 6: (1090) variable "_RgbStatus" is not used (warning)
+
+Memory Summary:
+    Program space        used   309h (   777) of   7FCh words   ( 38.0%)
+    Data space           used    5Ch (    92) of    7Eh bytes   ( 73.0%)
+    EEPROM space         None available
+    Data stack space     used     0h (     0) of    2Eh bytes   (  0.0%)
+    Configuration bits   used     0h (     0) of     1h word    (  0.0%)
+    ID Location space    used     0h (     0) of     4h bytes   (  0.0%)
+
